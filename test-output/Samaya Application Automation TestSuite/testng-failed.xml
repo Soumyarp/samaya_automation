@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Samaya Application Automation TestSuite]">
+  <test name="Samaya_Regression_testcases(failed)">
+    <classes>
+      <class name="com.samaya.qa.testcases.AffiliatePageTest">
+        <methods>
+          <include name="validateCreateAffiliate" invocation-numbers="0 1 2"/>
+          <include name="closeCreatePage"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.samaya.qa.testcases.AffiliatePageTest -->
+      <class name="com.samaya.qa.testcases.BranchPageTest">
+        <methods>
+          <include name="validateCreateBranch" invocation-numbers="0 1 2"/>
+          <include name="closeCreatePage"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.samaya.qa.testcases.BranchPageTest -->
+    </classes>
+  </test> <!-- Samaya_Regression_testcases(failed) -->
+</suite> <!-- Failed suite [Samaya Application Automation TestSuite] -->

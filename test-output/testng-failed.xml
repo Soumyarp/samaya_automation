@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test1(failed)">
+    <classes>
+      <class name="com.samaya.qa.testcases.DepartmentpageTest">
+        <methods>
+          <include name="validateDepartment" invocation-numbers="0 1 2 3"/>
+          <include name="logout"/>
+          <include name="verifyDepartmentPage"/>
+          <include name="logoutDepartmentScreen"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.samaya.qa.testcases.DepartmentpageTest -->
+      <class name="com.samaya.qa.testcases.AffiliatePageTest">
+        <methods>
+          <include name="logout"/>
+          <include name="validateCreateAffiliate" invocation-numbers="0 1 2"/>
+          <include name="closeCreatePage"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.samaya.qa.testcases.AffiliatePageTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
