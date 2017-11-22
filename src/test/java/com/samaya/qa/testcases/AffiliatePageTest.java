@@ -40,6 +40,7 @@ public class AffiliatePageTest extends TestBase{
 		affiliatepage= new AffiliatePage();
 		Thread.sleep(1000);
 		affiliatepage.clickCreateAffiliateButton();
+		System.out.println("hi this is for Git ");
 		
 	}
 	@DataProvider
