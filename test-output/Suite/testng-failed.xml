@@ -11,24 +11,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.samaya.qa.testcases.DepartmentpageTest -->
-      <class name="com.samaya.qa.testcases.ManageTagPageTest">
-        <methods>
-          <include name="verifyAffilitePage"/>
-          <include name="logoutDepartmentScreen"/>
-          <include name="validateManageTag" invocation-numbers="0 1 2"/>
-          <include name="setUp"/>
-          <include name="logout"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.samaya.qa.testcases.ManageTagPageTest -->
-      <class name="com.samaya.qa.testcases.DesignationPageTest">
-        <methods>
-          <include name="logout"/>
-          <include name="logoutDepartmentScreen"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.samaya.qa.testcases.DesignationPageTest -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
