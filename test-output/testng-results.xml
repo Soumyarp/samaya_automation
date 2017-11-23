@@ -1,158 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="13" passed="11">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="114559" started-at="2017-11-21T18:30:03Z" finished-at="2017-11-21T18:31:58Z">
+  <suite name="Default suite" duration-ms="47289" started-at="2017-11-23T06:03:22Z" finished-at="2017-11-23T06:04:09Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="114559" started-at="2017-11-21T18:30:03Z" finished-at="2017-11-21T18:31:58Z">
-      <class name="com.samaya.qa.testcases.DepartmentpageTest">
-        <test-method status="PASS" signature="verifyDepartmentPage()[pri:4, instance:com.samaya.qa.testcases.DepartmentpageTest@19e13df]" name="verifyDepartmentPage" duration-ms="4752" started-at="2017-11-22T00:00:49Z" finished-at="2017-11-22T00:00:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDepartmentPage -->
-        <test-method status="PASS" signature="validateDepartment(java.lang.String)[pri:5, instance:com.samaya.qa.testcases.DepartmentpageTest@19e13df]" name="validateDepartment" duration-ms="11984" started-at="2017-11-22T00:00:54Z" data-provider="getData" finished-at="2017-11-22T00:01:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testExcel54]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateDepartment -->
-        <test-method status="PASS" signature="validateDepartment(java.lang.String)[pri:5, instance:com.samaya.qa.testcases.DepartmentpageTest@19e13df]" name="validateDepartment" duration-ms="12032" started-at="2017-11-22T00:01:06Z" data-provider="getData" finished-at="2017-11-22T00:01:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testExcel63]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateDepartment -->
-        <test-method status="PASS" signature="validateDepartment(java.lang.String)[pri:5, instance:com.samaya.qa.testcases.DepartmentpageTest@19e13df]" name="validateDepartment" duration-ms="11916" started-at="2017-11-22T00:01:18Z" data-provider="getData" finished-at="2017-11-22T00:01:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testExcel71]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateDepartment -->
-        <test-method status="PASS" signature="validateDepartment(java.lang.String)[pri:5, instance:com.samaya.qa.testcases.DepartmentpageTest@19e13df]" name="validateDepartment" duration-ms="11845" started-at="2017-11-22T00:01:30Z" data-provider="getData" finished-at="2017-11-22T00:01:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testExcel88]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateDepartment -->
-        <test-method status="PASS" signature="logoutDepartmentScreen()[pri:6, instance:com.samaya.qa.testcases.DepartmentpageTest@19e13df]" name="logoutDepartmentScreen" duration-ms="2285" started-at="2017-11-22T00:01:42Z" finished-at="2017-11-22T00:01:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutDepartmentScreen -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.samaya.qa.testcases.DepartmentpageTest@19e13df]" name="logout" is-config="true" duration-ms="13665" started-at="2017-11-22T00:01:44Z" finished-at="2017-11-22T00:01:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-      </class> <!-- com.samaya.qa.testcases.DepartmentpageTest -->
-      <class name="com.samaya.qa.testcases.AffiliatePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.samaya.qa.testcases.AffiliatePageTest@cb5822]" name="setUp" is-config="true" duration-ms="25556" started-at="2017-11-21T23:59:37Z" finished-at="2017-11-22T00:00:03Z">
+    <test name="Default test" duration-ms="47289" started-at="2017-11-23T06:03:22Z" finished-at="2017-11-23T06:04:09Z">
+      <class name="com.samaya.qa.testcases.DesignationPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.samaya.qa.testcases.DesignationPageTest@bd1b6a]" name="setUp" is-config="true" duration-ms="25388" started-at="2017-11-23T11:32:56Z" finished-at="2017-11-23T11:33:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.samaya.qa.testcases.AffiliatePageTest@cb5822]" name="login" is-config="true" duration-ms="1496" started-at="2017-11-22T00:00:03Z" finished-at="2017-11-22T00:00:04Z">
+        <test-method status="PASS" signature="verifyDesignationPage()[pri:7, instance:com.samaya.qa.testcases.DesignationPageTest@bd1b6a]" name="verifyDesignationPage" duration-ms="5720" started-at="2017-11-23T11:33:22Z" finished-at="2017-11-23T11:33:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="verifyAffilitePage()[pri:1, instance:com.samaya.qa.testcases.AffiliatePageTest@cb5822]" name="verifyAffilitePage" duration-ms="3153" started-at="2017-11-22T00:00:05Z" finished-at="2017-11-22T00:00:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAffilitePage -->
-        <test-method status="PASS" signature="validateCreateAffiliate(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.samaya.qa.testcases.AffiliatePageTest@cb5822]" name="validateCreateAffiliate" duration-ms="9477" started-at="2017-11-22T00:00:08Z" data-provider="getData" finished-at="2017-11-22T00:00:18Z">
+        </test-method> <!-- verifyDesignationPage -->
+        <test-method status="PASS" signature="validateDepartment(java.lang.String)[pri:8, instance:com.samaya.qa.testcases.DesignationPageTest@bd1b6a]" name="validateDepartment" duration-ms="6150" started-at="2017-11-23T11:33:28Z" data-provider="getData" finished-at="2017-11-23T11:33:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[testAffiliateexcel12]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12345647890]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Bangalore]]>
+                <![CDATA[testDesign1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateCreateAffiliate -->
-        <test-method status="PASS" signature="validateCreateAffiliate(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.samaya.qa.testcases.AffiliatePageTest@cb5822]" name="validateCreateAffiliate" duration-ms="7508" started-at="2017-11-22T00:00:18Z" data-provider="getData" finished-at="2017-11-22T00:00:25Z">
+        </test-method> <!-- validateDepartment -->
+        <test-method status="PASS" signature="validateDepartment(java.lang.String)[pri:8, instance:com.samaya.qa.testcases.DesignationPageTest@bd1b6a]" name="validateDepartment" duration-ms="6198" started-at="2017-11-23T11:33:35Z" data-provider="getData" finished-at="2017-11-23T11:33:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[testAffiliateexcel21]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456578990]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Bangalore]]>
+                <![CDATA[testDesign2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateCreateAffiliate -->
-        <test-method status="PASS" signature="validateCreateAffiliate(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.samaya.qa.testcases.AffiliatePageTest@cb5822]" name="validateCreateAffiliate" duration-ms="7562" started-at="2017-11-22T00:00:25Z" data-provider="getData" finished-at="2017-11-22T00:00:33Z">
+        </test-method> <!-- validateDepartment -->
+        <test-method status="PASS" signature="validateDepartment(java.lang.String)[pri:8, instance:com.samaya.qa.testcases.DesignationPageTest@bd1b6a]" name="validateDepartment" duration-ms="6067" started-at="2017-11-23T11:33:41Z" data-provider="getData" finished-at="2017-11-23T11:33:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[testAffiliateexcel33]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456678900]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Bangalore]]>
+                <![CDATA[testDesign3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateCreateAffiliate -->
-        <test-method status="PASS" signature="closeCreatePage()[pri:3, instance:com.samaya.qa.testcases.AffiliatePageTest@cb5822]" name="closeCreatePage" duration-ms="2311" started-at="2017-11-22T00:00:33Z" finished-at="2017-11-22T00:00:35Z">
+        </test-method> <!-- validateDepartment -->
+        <test-method status="PASS" signature="validateDepartment(java.lang.String)[pri:8, instance:com.samaya.qa.testcases.DesignationPageTest@bd1b6a]" name="validateDepartment" duration-ms="6125" started-at="2017-11-23T11:33:47Z" data-provider="getData" finished-at="2017-11-23T11:33:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testDesign4]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeCreatePage -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.samaya.qa.testcases.AffiliatePageTest@cb5822]" name="logout" is-config="true" duration-ms="13698" started-at="2017-11-22T00:00:35Z" finished-at="2017-11-22T00:00:49Z">
+        </test-method> <!-- validateDepartment -->
+        <test-method status="PASS" signature="logoutDepartmentScreen()[pri:9, instance:com.samaya.qa.testcases.DesignationPageTest@bd1b6a]" name="logoutDepartmentScreen" duration-ms="2289" started-at="2017-11-23T11:33:53Z" finished-at="2017-11-23T11:33:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutDepartmentScreen -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.samaya.qa.testcases.DesignationPageTest@bd1b6a]" name="logout" is-config="true" duration-ms="13754" started-at="2017-11-23T11:33:55Z" finished-at="2017-11-23T11:34:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.samaya.qa.testcases.AffiliatePageTest@cb5822]" name="tearDown" is-config="true" duration-ms="1503" started-at="2017-11-22T00:01:58Z" finished-at="2017-11-22T00:01:59Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.samaya.qa.testcases.DesignationPageTest@bd1b6a]" name="tearDown" is-config="true" duration-ms="1913" started-at="2017-11-23T11:34:09Z" finished-at="2017-11-23T11:34:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.samaya.qa.testcases.AffiliatePageTest -->
-    </test> <!-- Test1 -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.samaya.qa.testcases.DesignationPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

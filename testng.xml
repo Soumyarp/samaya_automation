@@ -5,6 +5,8 @@
     <classes>
      <class name="com.samaya.qa.testcases.AffiliatePageTest"/>
       <class name="com.samaya.qa.testcases.DepartmentpageTest"/>
+      <class name="com.samaya.qa.testcases.DesignationPageTest"/>
+      <class name="com.samaya.qa.testcases.ManageTagPageTest"/>
      
     </classes>
   </test> <!-- Test -->

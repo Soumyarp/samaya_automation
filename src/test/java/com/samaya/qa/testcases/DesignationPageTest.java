@@ -1,5 +1,6 @@
 package com.samaya.qa.testcases;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -18,13 +19,14 @@ public class DesignationPageTest extends TestBase {
 	
 	String sheetname = "Designation";
 	
-	@Test(priority=1)
+	@Test(priority=7)
 	public void verifyDesignationPage() throws InterruptedException{
-	//	loginpage = new LoginPage();
-	//	loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
+		loginpage = new LoginPage();
+		loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 		homepage=new HomePage();
+		Thread.sleep(2000);
 		homepage.clickOnOrganisation();
-		homepage.clickOnDepartmentPage();
+		homepage.clickOnDesignationPage();
 		designationpage= new DesignationPage();
 		Thread.sleep(1000);
 		designationpage.clickDesignation();;
@@ -34,9 +36,32 @@ public class DesignationPageTest extends TestBase {
 		Object data[][]=utility.getTestData(sheetname);
 		return data;
 }
-	@Test(priority=2,dataProvider="getData")
-	public  void validateDepartment(String Designationname) throws InterruptedException{
+	@Test(priority=8,dataProvider="getData")
+	public  void validateDesign(String Designationname) throws InterruptedException{
 		designationpage.createNewDesignation(Designationname);
 	}
+	
+	@Test(priority=9)
+	public void logoutDesignScreen() throws InterruptedException{
+		designationpage.closeDesignPage();
+		Thread.sleep(2000);
+	//	homepage.clickOnOrganisation();
+	//	Thread.sleep(2000);
+	//	homepage.clickOnAffiliatePage();
+	//	Thread.sleep(2000);
+		
+		
+	}
+	@AfterClass
+	public void logout() throws InterruptedException
+	{
+		homepage.clickUsername();
+		Thread.sleep(3000);
+		homepage.clickLogoutButton(0);
+		Thread.sleep(10000);	
+	}
+ 
+	
+	
 	
 }

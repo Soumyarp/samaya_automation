@@ -3,15 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.samaya.qa.testcases.DepartmentpageTest">
+      <class name="com.samaya.qa.testcases.DesignationPageTest">
         <methods>
-          <include name="validateDepartment" invocation-numbers="0 1 2 3"/>
-          <include name="verifyDepartmentPage"/>
+          <include name="logout"/>
           <include name="logoutDepartmentScreen"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.samaya.qa.testcases.DepartmentpageTest -->
+      </class> <!-- com.samaya.qa.testcases.DesignationPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

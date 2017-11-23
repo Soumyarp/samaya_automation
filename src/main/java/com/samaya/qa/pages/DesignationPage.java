@@ -26,6 +26,9 @@ public class DesignationPage extends TestBase {
 	@FindBy(xpath ="//button[contains(.,'SAVE')]")
     WebElement saveButon;
 	
+	@FindBy(xpath="//*[@id='appContentContainer']/div/app-designation-search/app-designation-detail/div/div[1]/button")
+	WebElement closeDesignScreen;
+	
 
 	//Intializing the page objects	
 			public DesignationPage(){
@@ -38,6 +41,10 @@ public class DesignationPage extends TestBase {
 			public void clickonSelectAffiliate(int arg)
 			{
 				selectContentfrmdrpdwn.get(arg).click();
+			}
+			
+			public void closeDesignPage(){
+				closeDesignScreen.click();
 			}
 			
 			public void createNewDesignation(String name) throws InterruptedException{

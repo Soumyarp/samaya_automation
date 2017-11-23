@@ -31,7 +31,7 @@ public class ManagePage  extends TestBase{
     WebElement saveButon;
 	
 	@FindBy(xpath="//*[@id='appContentContainer']/div/app-branch-search/app-tag-detail/div/div[1]/button")
-	WebElement closeCreateDesignScreen;
+	WebElement closeTagScreen;
 	
 	//Intializing the page objects	
 		public ManagePage(){
@@ -46,8 +46,8 @@ public class ManagePage  extends TestBase{
 			selectContentfrmdrpdwn.get(arg).click();
 		}
 		
-		public void closeCreateDesignScreen(){
-			closeCreateDesignScreen.click();
+		public void closeCreateTagScreen(){
+			closeTagScreen.click();
 		}
 		
 		public void createNewTag(String tname, String tvalue) throws InterruptedException{
