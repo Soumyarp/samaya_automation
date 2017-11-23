@@ -62,7 +62,7 @@ public class BranchesPage extends TestBase{
 	}
 		
 	public void createNewBranch(String brname, String braddr) throws InterruptedException{
-		Thread.sleep(2000);
+		
 			clickDropdown.click();
 			Thread.sleep(2000);
 			clickonSelectAffiliate(0);
@@ -74,14 +74,12 @@ public class BranchesPage extends TestBase{
 			Thread.sleep(3000);
 			saveButon.click();
 			Thread.sleep(7000);
-			/*TestUtil utility= new TestUtil();
-			utility.pageRefresh();
-			Thread.sleep(5000);*/
+			
 			
 			
 		}
 	
-	public void createNewBranchwithMultipledata(String brname, String braddr) throws InterruptedException{
+	/*public void createNewBranchwithMultipledata(String brname, String braddr) throws InterruptedException{
 		
 			clickDropdown.click();
 			Thread.sleep(2000);
@@ -96,7 +94,7 @@ public class BranchesPage extends TestBase{
 			Thread.sleep(7000);
 			//branchpage.closeCreateScreen();
 			//branchpage.clickNewCreateBranch();
-			/*TestUtil utility= new TestUtil();
+			TestUtil utility= new TestUtil();
 			utility.pageRefresh();
 			Thread.sleep(5000);*/
 			
@@ -106,4 +104,4 @@ public class BranchesPage extends TestBase{
 	
 	
 
-}
+

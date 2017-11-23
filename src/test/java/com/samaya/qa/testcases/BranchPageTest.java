@@ -2,6 +2,7 @@ package com.samaya.qa.testcases;
 
 import java.util.Properties;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -13,19 +14,18 @@ import com.samaya.qa.pages.LoginPage;
 import com.samaya.qa.util.TestUtil;
 
 public class BranchPageTest extends TestBase {
-	HomePage homepage;
-	
+	 HomePage homepage;
+	 LoginPage loginpage;
 	 BranchesPage branchpage;
 	 TestUtil utility;
-	 Properties prop;
 	 
 	 String sheetname = "Branch";
 	 
 	 @Test(priority=1)
 		public void verifyBranchPage() throws InterruptedException{
-		 LoginPage loginpage = new LoginPage();
+		    loginpage = new LoginPage();
 			loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
-			 HomePage homepage=new HomePage();
+			HomePage homepage=new HomePage();
 			Thread.sleep(3000);
 			homepage.clickOnOrganisation();
 			homepage.clickOnBranchPage();
@@ -49,14 +49,23 @@ public class BranchPageTest extends TestBase {
 		}
 		
 		@Test(priority=3)
-		public void closeCreatePage() throws InterruptedException{
-			
+		public void logoutDesignScreen() throws InterruptedException{
 			branchpage.closeCreateScreen();
-			Thread.sleep(3000);
+			Thread.sleep(2000);
+		//	homepage.clickOnOrganisation();
+		//	Thread.sleep(2000);
+		//	homepage.clickOnAffiliatePage();
+		//	Thread.sleep(2000);
+			
+			
+		}
+		@AfterClass
+		public void logout() throws InterruptedException
+		{
 			homepage.clickUsername();
 			Thread.sleep(3000);
 			homepage.clickLogoutButton(0);
-			Thread.sleep(8000);
+			Thread.sleep(10000);	
 		}
 		
 		

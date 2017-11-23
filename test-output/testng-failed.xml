@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test1(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.samaya.qa.testcases.DepartmentpageTest">
+      <class name="com.samaya.qa.testcases.BranchPageTest">
         <methods>
-          <include name="validateDepartment"/>
-          <include name="logout"/>
+          <include name="logoutDesignScreen"/>
+          <include name="validateCreateBranch" invocation-numbers="0 1 2"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="logout"/>
         </methods>
-      </class> <!-- com.samaya.qa.testcases.DepartmentpageTest -->
+      </class> <!-- com.samaya.qa.testcases.BranchPageTest -->
     </classes>
-  </test> <!-- Test1(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
