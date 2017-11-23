@@ -17,7 +17,6 @@ import com.samaya.qa.util.TestUtil;
 
 public class DepartmentpageTest extends TestBase {
 	HomePage homepage;
-	
 	TestUtil utility;
 	DepartmentPage departmentpage;
 	

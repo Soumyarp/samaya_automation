@@ -8,6 +8,7 @@
       <class name="com.samaya.qa.testcases.DesignationPageTest"/>
       <class name="com.samaya.qa.testcases.ManageTagPageTest"/>
       <class name="com.samaya.qa.testcases.LeaveTypePageTest"/>
+      <class name="com.samaya.qa.testcases.EmpTypePageTest"/>
      
     </classes>
   </test> <!-- Test -->
