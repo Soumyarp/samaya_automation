@@ -30,6 +30,9 @@ public class ManagePage  extends TestBase{
 	@FindBy(xpath ="//button[contains(.,'SAVE')]")
     WebElement saveButon;
 	
+	@FindBy(xpath="//*[@id='appContentContainer']/div/app-branch-search/app-tag-detail/div/div[1]/button")
+	WebElement closeCreateDesignScreen;
+	
 	//Intializing the page objects	
 		public ManagePage(){
 			PageFactory.initElements(driver, this);
@@ -41,6 +44,10 @@ public class ManagePage  extends TestBase{
 		public void clickonSelectAffiliate(int arg)
 		{
 			selectContentfrmdrpdwn.get(arg).click();
+		}
+		
+		public void closeCreateDesignScreen(){
+			closeCreateDesignScreen.click();
 		}
 		
 		public void createNewTag(String tname, String tvalue) throws InterruptedException{
