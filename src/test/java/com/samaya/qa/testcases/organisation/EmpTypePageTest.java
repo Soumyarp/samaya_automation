@@ -1,14 +1,14 @@
-package com.samaya.qa.testcases;
+package com.samaya.qa.testcases.organisation;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.samaya.qa.base.TestBase;
-import com.samaya.qa.pages.DesignationPage;
-import com.samaya.qa.pages.EmpTypePage;
-import com.samaya.qa.pages.HomePage;
-import com.samaya.qa.pages.LoginPage;
+import com.samaya.qa.pages.organisation.DesignationPage;
+import com.samaya.qa.pages.organisation.EmpTypePage;
+import com.samaya.qa.pages.organisation.HomePage;
+import com.samaya.qa.pages.organisation.LoginPage;
 import com.samaya.qa.util.TestUtil;
 
 public class EmpTypePageTest extends TestBase{

@@ -1,49 +1,49 @@
-package com.samaya.qa.testcases;
+package com.samaya.qa.testcases.organisation;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.samaya.qa.base.TestBase;
-import com.samaya.qa.pages.DepartmentPage;
-import com.samaya.qa.pages.DesignationPage;
-import com.samaya.qa.pages.HomePage;
-import com.samaya.qa.pages.LoginPage;
+import com.samaya.qa.pages.organisation.HomePage;
+import com.samaya.qa.pages.organisation.LeaveTypePage;
+import com.samaya.qa.pages.organisation.LoginPage;
+import com.samaya.qa.pages.organisation.ManagePage;
 import com.samaya.qa.util.TestUtil;
 
-public class DesignationPageTest extends TestBase {
+public class LeaveTypePageTest extends TestBase {
 	HomePage homepage;
 	LoginPage loginpage;
 	TestUtil utility;
-	DesignationPage designationpage;
+	LeaveTypePage leavetypepage;
 	
-	String sheetname = "Designation";
+	String sheetname = "LeaveType";
 	
-	@Test(priority=7)
-	public void verifyDesignationPage() throws InterruptedException{
+	@Test(priority=13)
+	public void verifyManagePage() throws InterruptedException{
 		loginpage = new LoginPage();
 		loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 		homepage=new HomePage();
 		Thread.sleep(2000);
 		homepage.clickOnOrganisation();
-		homepage.clickOnDesignationPage();
-		designationpage= new DesignationPage();
+		homepage.clickOnLeaveTypePage();
+		leavetypepage= new LeaveTypePage();
 		Thread.sleep(1000);
-		designationpage.clickDesignation();;
+		leavetypepage.clickLeaveType();
 	}      
 	@DataProvider
 	public Object[][] getData(){
 		Object data[][]=utility.getTestData(sheetname);
 		return data;
 }
-	@Test(priority=8,dataProvider="getData")
-	public  void validateDesign(String Designationname) throws InterruptedException{
-		designationpage.createNewDesignation(Designationname);
+	@Test(priority=14,dataProvider="getData")
+	public  void validateLeaveType(String LeaveName,String LeaveAbbrevation ) throws InterruptedException{
+		leavetypepage.createNewLeaveType(LeaveName, LeaveAbbrevation);;
 	}
 	
-	@Test(priority=9)
-	public void logoutDesignScreen() throws InterruptedException{
-		designationpage.closeDesignPage();
+	@Test(priority=15)
+	public void logoutManageScreen() throws InterruptedException{
+		leavetypepage.closeLeaveTypeScreen();
 		Thread.sleep(2000);
 	//	homepage.clickOnOrganisation();
 	//	Thread.sleep(2000);
@@ -60,8 +60,5 @@ public class DesignationPageTest extends TestBase {
 		homepage.clickLogoutButton(0);
 		Thread.sleep(10000);	
 	}
- 
-	
-	
-	
+
 }

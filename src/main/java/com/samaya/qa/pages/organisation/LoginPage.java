@@ -1,4 +1,4 @@
-package com.samaya.qa.pages;
+package com.samaya.qa.pages.organisation;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

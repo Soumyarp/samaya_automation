@@ -1,4 +1,4 @@
-package com.samaya.qa.pages;
+package com.samaya.qa.pages.organisation;
 
 import java.util.List;
 

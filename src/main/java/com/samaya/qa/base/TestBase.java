@@ -17,7 +17,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
-import com.samaya.qa.pages.LoginPage;
+import com.samaya.qa.pages.organisation.LoginPage;
 import com.samaya.qa.util.TestUtil;
 import com.samaya.qa.util.WebEventListener;
 

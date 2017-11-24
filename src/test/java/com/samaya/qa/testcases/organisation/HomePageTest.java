@@ -1,4 +1,4 @@
-package com.samaya.qa.testcases;
+package com.samaya.qa.testcases.organisation;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -7,9 +7,9 @@ import org.testng.annotations.Test;
 
 
 import com.samaya.qa.base.TestBase;
-import com.samaya.qa.pages.EmployeesPage;
-import com.samaya.qa.pages.HomePage;
-import com.samaya.qa.pages.LoginPage;
+import com.samaya.qa.pages.organisation.EmployeesPage;
+import com.samaya.qa.pages.organisation.HomePage;
+import com.samaya.qa.pages.organisation.LoginPage;
 import com.samaya.qa.util.TestUtil;
 
 public class HomePageTest extends TestBase{

@@ -1,4 +1,4 @@
-package com.samaya.qa.testcases;
+package com.samaya.qa.testcases.organisation;
 
 import java.util.concurrent.TimeUnit;
 
@@ -10,9 +10,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.samaya.qa.base.TestBase;
-import com.samaya.qa.pages.AffiliatePage;
-import com.samaya.qa.pages.HomePage;
-import com.samaya.qa.pages.LoginPage;
+import com.samaya.qa.pages.organisation.AffiliatePage;
+import com.samaya.qa.pages.organisation.HomePage;
+import com.samaya.qa.pages.organisation.LoginPage;
 import com.samaya.qa.util.TestUtil;
 
 public class AffiliatePageTest extends TestBase{
