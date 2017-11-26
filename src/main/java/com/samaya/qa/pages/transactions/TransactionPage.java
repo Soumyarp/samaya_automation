@@ -38,9 +38,9 @@ public class TransactionPage  extends TestBase{
 			leaveLink.click();
 			return new LeavePage();
 		}
-		public CompoffPage clickOnCompoffLink(){
+		public void clickOnCompoffLink(){
 			compOffLink.click();
-			return new CompoffPage();
+			
 		}
 		
 		public String VerifyOnDutyPageUrl(){

@@ -5,8 +5,9 @@
     <classes>
       <class name="com.samaya.qa.testcases.transactions.CompoffPageTest">
         <methods>
-          <include name="verifyCompOffPage"/>
           <include name="setUp"/>
+          <include name="verifyCompOffPageusingBehalf"/>
+          <include name="verifyCompOffPagewithOutBehalf"/>
         </methods>
       </class> <!-- com.samaya.qa.testcases.transactions.CompoffPageTest -->
     </classes>
