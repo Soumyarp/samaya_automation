@@ -3,15 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.samaya.qa.testcases.BranchPageTest">
+      <class name="com.samaya.qa.testcases.transactions.CompoffPageTest">
         <methods>
-          <include name="logoutDesignScreen"/>
-          <include name="validateCreateBranch" invocation-numbers="0 1 2"/>
+          <include name="verifyCompOffPage"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="logout"/>
         </methods>
-      </class> <!-- com.samaya.qa.testcases.BranchPageTest -->
+      </class> <!-- com.samaya.qa.testcases.transactions.CompoffPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
