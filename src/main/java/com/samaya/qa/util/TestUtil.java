@@ -20,6 +20,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -192,8 +193,13 @@ public static void takeScreenshotAtEndOfTest() throws IOException {
 	File scrfile= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	String currentDir=System.getProperty("user.dir");
 	FileUtils.copyFile(scrfile,new File(currentDir +"/screenshots/"+screenshotfile+".png" ));
-	
-	
 }
+
+public void scrollWindowPage(){
+	JavascriptExecutor jse = (JavascriptExecutor) driver;
+  //  jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+	jse.executeScript("scroll(0,300)");
+}
+
 }
 

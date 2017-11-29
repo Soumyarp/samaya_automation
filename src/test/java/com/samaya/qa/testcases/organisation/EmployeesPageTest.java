@@ -8,11 +8,14 @@ import com.samaya.qa.base.TestBase;
 import com.samaya.qa.pages.organisation.EmployeesPage;
 import com.samaya.qa.pages.organisation.HomePage;
 import com.samaya.qa.pages.organisation.LoginPage;
+import com.samaya.qa.util.TestUtil;
 import com.thoughtworks.selenium.webdriven.commands.CreateCookie;
 
 import org.testng.annotations.Test;
 
 public class EmployeesPageTest extends TestBase{
+	
+	TestUtil utility;
 	
 	
 //	@BeforeMethod
@@ -35,14 +38,40 @@ public class EmployeesPageTest extends TestBase{
 	public void verifyEmployeeButton() throws InterruptedException{
 		LoginPage loginpage = new LoginPage();
 		loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
-		EmployeesPage employeespage=new EmployeesPage();
+		EmployeesPage employeepage=new EmployeesPage();
 		HomePage homepage=new HomePage();
 		homepage.clickOnOrganisation();
 		homepage.clickOnEmployeesLink();
-		Assert.assertTrue(employeespage.verifyEmployeeLebel(), "Employee lebel is missing on the page");
-		employeespage.clickCreateEmployeeButton();
+	//	Assert.assertTrue(employeespage.verifyEmployeeLebel(), "Employee lebel is missing on the page");
+		employeepage.clickCreateEmployeeButton();
 		Thread.sleep(1000);
-		employeespage.createEmployee();
+		//employeespage.createEmployee();
+		employeepage.clickAffiliateDropDown(2);
+		Thread.sleep(2000);
+		/*utility= new TestUtil();
+		utility.scrollWindowPage();*/
+		employeepage.clickAccessProfileDropDown(7);
+		Thread.sleep(2000);
+		employeepage.selectAffiliateFromDropDown(2);
+		Thread.sleep(1000);
+		employeepage.clickBranchDropDown(3);
+		employeepage.enterEmployeeName("test");
+		employeepage.selectDateOfJoining();
+		Thread.sleep(2000);
+		employeepage.enterEmployeeID("12345");
+		Thread.sleep(2000);
+		
+		employeepage.enterEnrollID("23456");
+		employeepage.clickBranchDropDown(3);
+		
+		
+		
+		
+		
+		//employeepage.closeEmployeeCreateandEditPage();
+		
+		
+		
 	}
 
 

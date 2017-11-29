@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.samaya.qa.testcases.organisation.DepartmentpageTest">
+      <class name="com.samaya.qa.testcases.organisation.EmployeesPageTest">
         <methods>
-          <include name="validateDepartment"/>
+          <include name="verifyEmployeeButton"/>
           <include name="setUp"/>
-          <include name="logout"/>
         </methods>
-      </class> <!-- com.samaya.qa.testcases.organisation.DepartmentpageTest -->
+      </class> <!-- com.samaya.qa.testcases.organisation.EmployeesPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
