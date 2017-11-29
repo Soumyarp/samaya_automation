@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.samaya.qa.testcases.transactions.CompoffPageTest">
+      <class name="com.samaya.qa.testcases.organisation.DepartmentpageTest">
         <methods>
+          <include name="validateDepartment"/>
           <include name="setUp"/>
-          <include name="verifyCompOffPageusingBehalf"/>
-          <include name="verifyCompOffPagewithOutBehalf"/>
+          <include name="logout"/>
         </methods>
-      </class> <!-- com.samaya.qa.testcases.transactions.CompoffPageTest -->
+      </class> <!-- com.samaya.qa.testcases.organisation.DepartmentpageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

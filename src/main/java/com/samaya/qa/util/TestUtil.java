@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Iterator;
 
@@ -22,7 +23,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-
 import com.samaya.qa.base.TestBase;
 import com.samaya.qa.pages.organisation.AffiliatePage;
 import com.samaya.qa.pages.organisation.EmployeesPage;
@@ -39,6 +39,8 @@ public class TestUtil extends TestBase  {
 	HomePage homepage;
 	EmployeesPage employeespage;
 	AffiliatePage affiliatepage;
+	public static Calendar calender;
+	public static SimpleDateFormat formater;
 	
 	
   public void navigateToPage(){
@@ -185,16 +187,13 @@ public class TestUtil extends TestBase  {
 
 public static void takeScreenshotAtEndOfTest() throws IOException {
 	
-	/*long curentDateTime= System.currentTimeMillis();
-	Date currentdate = new Date(curentDateTime);
-	DateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-	String convertedDate=dateformat.format(currentdate);*/
-	
+	Date d = new Date();
+	String screenshotfile= d.toString().replace(":", "_").replace(" ", "_");
 	File scrfile= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	String currentDir=System.getProperty("user.dir");
-	FileUtils.copyFile(scrfile,new File(currentDir +"/screenshots/"+System.currentTimeMillis()+".png" ));
+	FileUtils.copyFile(scrfile,new File(currentDir +"/screenshots/"+screenshotfile+".png" ));
 	
 	
+}
 }
 
-}

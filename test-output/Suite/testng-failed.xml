@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.samaya.qa.extentreportlistner.ExtentReporterNG"/>
+  </listeners>
   <test name="Test1(failed)">
     <classes>
-      <class name="com.samaya.qa.testcases.DepartmentpageTest">
+      <class name="com.samaya.qa.testcases.organisation.DepartmentpageTest">
         <methods>
           <include name="validateDepartment"/>
-          <include name="logout"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="logout"/>
         </methods>
-      </class> <!-- com.samaya.qa.testcases.DepartmentpageTest -->
+      </class> <!-- com.samaya.qa.testcases.organisation.DepartmentpageTest -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

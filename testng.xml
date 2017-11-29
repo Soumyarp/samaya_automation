@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+ <listeners>
+           <listener class-name="com.samaya.qa.extentreportlistner.ExtentReporterNG" />
+ </listeners>
+
+
   <test name="Test1">
     <classes>
-     <class name="com.samaya.qa.testcases.AffiliatePageTest"/>
-      <class name="com.samaya.qa.testcases.DepartmentpageTest"/>
-      <class name="com.samaya.qa.testcases.DesignationPageTest"/>
-      <class name="com.samaya.qa.testcases.ManageTagPageTest"/>
-      <class name="com.samaya.qa.testcases.LeaveTypePageTest"/>
-      <class name="com.samaya.qa.testcases.EmpTypePageTest"/>
+     <class name="com.samaya.qa.testcases.organisation.AffiliatePageTest"/>
+      <class name="com.samaya.qa.testcases.organisation.DepartmentpageTest"/>
+      <class name="com.samaya.qa.testcases.organisation.DesignationPageTest"/>
+      <class name="com.samaya.qa.testcases.organisation.ManageTagPageTest"/>
+      <class name="com.samaya.qa.testcases.organisation.LeaveTypePageTest"/>
+      <class name="com.samaya.qa.testcases.organisation.EmpTypePageTest"/>
      
     </classes>
   </test> <!-- Test -->
