@@ -196,9 +196,10 @@ public static void takeScreenshotAtEndOfTest() throws IOException {
 }
 
 public void scrollWindowPage(){
+	System.out.println("scrolling started");
 	JavascriptExecutor jse = (JavascriptExecutor) driver;
-  //  jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-	jse.executeScript("scroll(0,300)");
+   //jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+	jse.executeScript("scroll(0, 50);");
 }
 
 }

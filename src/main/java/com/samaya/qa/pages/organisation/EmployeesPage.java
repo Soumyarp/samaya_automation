@@ -25,8 +25,8 @@ public class EmployeesPage extends TestBase {
 	List<WebElement> clickDropdown;
 	
 	@FindBys({
-		@FindBy(xpath="//li[3]/a")})
-		List<WebElement> selectContentfrmAffiliatedrpdwn;
+		@FindBy(xpath="//div[@class='dropdown open']/ul/li/a")})
+		List<WebElement> selectContentfrmdrpdwn;
 	
 	@FindBys({
 	@FindBy(xpath="//div[1]/st-dropdownlist/div/ul/li")})
@@ -114,13 +114,18 @@ public class EmployeesPage extends TestBase {
 		}
 		
         public void enterEnrollID(String enrollid){
-			
+			employeeId.clear();
 			employeeId.sendKeys(enrollid);
 			
 		}
         
         public void selectAffiliateFromDropDown(int arg){
-        	selectContentfrmAffiliatedrpdwn.get(arg).click();
+        	selectContentfrmdrpdwn.get(arg).click();
+        }
+        
+        public void selectBranchfromDropDown(int arg){
+        	selectContentfrmdrpdwn.get(arg).click();
+        	
         }
 		
         

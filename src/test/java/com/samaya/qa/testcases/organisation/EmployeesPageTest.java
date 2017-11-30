@@ -48,20 +48,23 @@ public class EmployeesPageTest extends TestBase{
 		//employeespage.createEmployee();
 		employeepage.clickAffiliateDropDown(2);
 		Thread.sleep(2000);
-		/*utility= new TestUtil();
-		utility.scrollWindowPage();*/
-		employeepage.clickAccessProfileDropDown(7);
-		Thread.sleep(2000);
-		employeepage.selectAffiliateFromDropDown(2);
+		employeepage.selectAffiliateFromDropDown(0);
+		utility= new TestUtil();
+		utility.scrollWindowPage();
+		
+		//employeepage.clickAccessProfileDropDown(7);
+		//Thread.sleep(2000);
+		//employeepage.selectAffiliateFromDropDown(2);
 		Thread.sleep(1000);
 		employeepage.clickBranchDropDown(3);
+		Thread.sleep(2000);
+		employeepage.selectBranchfromDropDown(0);
 		employeepage.enterEmployeeName("test");
 		employeepage.selectDateOfJoining();
 		Thread.sleep(2000);
 		employeepage.enterEmployeeID("12345");
 		Thread.sleep(2000);
-		
-		employeepage.enterEnrollID("23456");
+		employeepage.enterEnrollID("12345");
 		employeepage.clickBranchDropDown(3);
 		
 		
