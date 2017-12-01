@@ -1,5 +1,7 @@
 package com.samaya.qa.testcases.organisation;
 
+import java.awt.AWTException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -35,22 +37,27 @@ public class EmployeesPageTest extends TestBase{
 	}*/
 	
 	@Test(priority=1)
-	public void verifyEmployeeButton() throws InterruptedException{
+	public void verifyEmployeeButton() throws InterruptedException, AWTException{
 		LoginPage loginpage = new LoginPage();
 		loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 		EmployeesPage employeepage=new EmployeesPage();
 		HomePage homepage=new HomePage();
+		Thread.sleep(10000);
+	//	homepage.scrollWindowDashPage();
+		Thread.sleep(10000);
 		homepage.clickOnOrganisation();
 		homepage.clickOnEmployeesLink();
 	//	Assert.assertTrue(employeespage.verifyEmployeeLebel(), "Employee lebel is missing on the page");
 		employeepage.clickCreateEmployeeButton();
 		Thread.sleep(1000);
+		
+		
 		//employeespage.createEmployee();
 		employeepage.clickAffiliateDropDown(2);
 		Thread.sleep(2000);
 		employeepage.selectAffiliateFromDropDown(0);
-		utility= new TestUtil();
-		utility.scrollWindowPage();
+		Thread.sleep(2000);
+		
 		
 		//employeepage.clickAccessProfileDropDown(7);
 		//Thread.sleep(2000);
@@ -65,7 +72,9 @@ public class EmployeesPageTest extends TestBase{
 		employeepage.enterEmployeeID("12345");
 		Thread.sleep(2000);
 		employeepage.enterEnrollID("12345");
-		employeepage.clickBranchDropDown(3);
+		TestUtil utility = new TestUtil();
+		utility.scrollWindowPage();
+		
 		
 		
 		

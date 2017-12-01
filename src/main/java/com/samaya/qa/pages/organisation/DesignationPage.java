@@ -1,5 +1,6 @@
 package com.samaya.qa.pages.organisation;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -41,10 +42,17 @@ public class DesignationPage extends TestBase {
 			public void clickonSelectAffiliate(int arg)
 			{
 				selectContentfrmdrpdwn.get(arg).click();
+				
+			/*	int ind=selectContentfrmdrpdwn.indexOf(affil)+1;
+				selectContentfrmdrpdwn.get(ind).click();*/
 			}
 			
 			public void closeDesignPage(){
 				closeDesignScreen.click();
+			}
+			public void selcAffilatedropown()
+			{
+				clickonDropdown.click();
 			}
 			
 			public void createNewDesignation(String name) throws InterruptedException{
@@ -55,6 +63,17 @@ public class DesignationPage extends TestBase {
 				Thread.sleep(2000);
 				saveButon.click();
 				Thread.sleep(1000);
+			}
+			public List getdropdownValues()
+			{
+				System.out.println(selectContentfrmdrpdwn.size());
+				List<String> list=new ArrayList<String>();
+				for(WebElement e:selectContentfrmdrpdwn)
+				{
+					list.add(e.getText());
+				}
+				return list;
+				
 			}
 
 }

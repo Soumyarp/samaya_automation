@@ -1,5 +1,8 @@
 package com.samaya.qa.pages.organisation;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -47,6 +50,11 @@ public class EmployeesPage extends TestBase {
 	
 	@FindBy(xpath="//*[@id='appContentContainer']/div/app-employee-search/app-employee-detail/div/div[1]/button")
 	WebElement closeCreatDeptScreen;
+	
+	@FindBys({
+		@FindBy(xpath="//st-button/button[contains(.,'PROCEED')]")})
+	List <WebElement> proceedButton;
+	
 	
 	
 	
@@ -127,6 +135,13 @@ public class EmployeesPage extends TestBase {
         	selectContentfrmdrpdwn.get(arg).click();
         	
         }
+        
+        public void clickOnProceedButton(int arg){
+        	proceedButton.get(arg).click();
+        }
+        
+        
+        
 		
         
         

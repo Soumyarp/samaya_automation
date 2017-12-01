@@ -1,5 +1,8 @@
 package com.samaya.qa.util;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -195,12 +198,17 @@ public static void takeScreenshotAtEndOfTest() throws IOException {
 	FileUtils.copyFile(scrfile,new File(currentDir +"/screenshots/"+screenshotfile+".png" ));
 }
 
-public void scrollWindowPage(){
-	System.out.println("scrolling started");
-	JavascriptExecutor jse = (JavascriptExecutor) driver;
-   //jse.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-	jse.executeScript("scroll(0, 50);");
+public void scrollWindowPage() throws AWTException, InterruptedException{
+	
+	Robot robot = new Robot();
+	Thread.sleep(2000);
+    robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+    robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+    
+	
 }
+
+
 
 }
 

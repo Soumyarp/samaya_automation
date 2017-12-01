@@ -1,5 +1,9 @@
 package com.samaya.qa.testcases.organisation;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -52,14 +56,33 @@ public class DesignationPageTest extends TestBase {
 		
 		
 	}
-	@AfterClass
-	public void logout() throws InterruptedException
-	{
-		homepage.clickUsername();
-		Thread.sleep(3000);
-		homepage.clickLogoutButton(0);
-		Thread.sleep(10000);	
+	@Test(priority=10)
+	public void valiateaffilateptions() throws InterruptedException{
+		String str[]={"Tata Food","Tata Medical","TATA Motors"};
+		List<String> l1=new ArrayList<String>();
+		homepage.clickOnOrganisation();
+		homepage.clickOnDesignationPage();
+		designationpage= new DesignationPage();
+		Thread.sleep(1000);
+		designationpage.clickDesignation();
+		designationpage.selcAffilatedropown();
+		List<String> values=designationpage.getdropdownValues();
+		//Assert.assertTrue(str[i].contains(values.get(i)));
+		for(int i=0;i<values.size();i++)
+		{
+			Assert.assertTrue(str[i].contains(values.get(i)));
+		}
+	
 	}
+	
+//	@AfterClass
+//	public void logout() throws InterruptedException
+//	{
+//		homepage.clickUsername();
+//		Thread.sleep(3000);
+//		homepage.clickLogoutButton(0);
+//		Thread.sleep(10000);	
+//	}
  
 	
 	

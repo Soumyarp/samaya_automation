@@ -1,5 +1,7 @@
 package com.samaya.qa.testcases.organisation;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 import org.testng.annotations.AfterClass;
@@ -59,6 +61,7 @@ public class BranchPageTest extends TestBase {
 			
 			
 		}
+		
 		@AfterClass
 		public void logout() throws InterruptedException
 		{

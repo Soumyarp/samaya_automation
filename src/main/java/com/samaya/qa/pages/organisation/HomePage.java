@@ -1,8 +1,15 @@
 package com.samaya.qa.pages.organisation;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.List;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
@@ -50,6 +57,8 @@ WebElement Leave_TypesLink;
  @FindBys ({
 	 @FindBy(xpath="//div/ul/li[3]/a/div")})
 List <WebElement> logoutButton;
+ 
+ WebElement element = driver.findElement(By.xpath("html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]"));
  
 //Intializing the page objects	
 	public HomePage(){
@@ -168,6 +177,26 @@ List <WebElement> logoutButton;
 		public void clickLogoutButton(int arg){
 			logoutButton.get(arg).click();
 		}
+		
+		public void scrollWindowDashPage() throws AWTException, InterruptedException{
+        	System.out.println("scrolling started");
+    //    	JavascriptExecutor jse = (JavascriptExecutor) driver;
+         // jse.executeScript("window.scrollTo(0,Math.max(document.documentElement.scrollHeight,document.body.scrollHeight,document.documentElement.clientHeight));,element");
+    //   	jse.executeScript("arguments[0].scrollIntoView(true);",element);
+        //	jse.executeScript("scroll(0, 500);");
+        	
+        	Robot robot = new Robot();  // Robot class throws AWT Exception 
+            Thread.sleep(2000); // Thread.sleep throws InterruptedException 
+            robot.keyPress(KeyEvent.VK_CONTROL);
+            Thread.sleep(2000);
+            robot.keyPress(KeyEvent.VK_END);
+            Thread.sleep(2000);
+            robot.keyRelease(KeyEvent.VK_CONTROL) ;
+            Thread.sleep(2000);
+            robot.keyRelease(KeyEvent.VK_END);
+        	
+        }
+        
 		
 }
 

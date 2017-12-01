@@ -64,7 +64,7 @@ public class TestBase {
  				driver = new FirefoxDriver();
 // 				System.out.println("launched browser");
  			}else if(browsername.equalsIgnoreCase("Chrome")){
- 					System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver.exe");
+ 					System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/driver/chromedriver.exe");
  					driver = new ChromeDriver();
  					
  				}

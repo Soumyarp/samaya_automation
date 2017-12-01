@@ -42,6 +42,8 @@ public class DepartmentPage extends TestBase{
 			public void clickonSelectAffiliate(int arg)
 			{
 				selectContentfrmdrpdwn.get(arg).click();
+				
+				
 			}
 			
 			public void closeCreateDeptScreen(){
