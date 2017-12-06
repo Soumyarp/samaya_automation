@@ -37,13 +37,13 @@ public class CompoffPage extends TestBase{
 	@FindBy(xpath="//input[@placeholder='Start Date']")
 	WebElement StartDate;
 	
-	@FindBy(xpath="//td[@data-day='11/25/2017']")
+	@FindBy(xpath="//td[@data-day='12/02/2017']")
 	WebElement SelectStartDateeeee;
 	
 	@FindBy(xpath="//input[@placeholder='End Date']")
 	WebElement EndDate;
 	
-	@FindBy(xpath="//td[@data-day='11/25/2017']")
+	@FindBy(xpath="//td[@data-day='12/02/2017']")
 	WebElement SelectEndDate;
 	
 	@FindBy(id="compoffReason")

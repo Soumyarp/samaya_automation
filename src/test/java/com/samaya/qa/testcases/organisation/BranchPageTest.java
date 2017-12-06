@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Properties;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -23,7 +24,8 @@ public class BranchPageTest extends TestBase {
 	 
 	 String sheetname = "Branch";
 	 
-	 @Test(priority=1)
+
+	 @Test(priority=4)
 		public void verifyBranchPage() throws InterruptedException{
 		    loginpage = new LoginPage();
 			loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
@@ -31,7 +33,7 @@ public class BranchPageTest extends TestBase {
 			Thread.sleep(3000);
 			homepage.clickOnOrganisation();
 			homepage.clickOnBranchPage();
-			BranchesPage branchpage= new BranchesPage();
+			branchpage= new BranchesPage();
 			Thread.sleep(1000);
 			branchpage.clickNewCreateBranch();
 	 } 
@@ -43,15 +45,15 @@ public class BranchPageTest extends TestBase {
 			
 		}
 		
-		@Test(priority=2,dataProvider="getData")
+		@Test(priority=5,dataProvider="getData")
 		public  void validateCreateBranch(String Branchname,String BranchAddress ) throws InterruptedException{
 			branchpage.createNewBranch(Branchname, BranchAddress);
 			//branchpage.closeCreateScreen();
 			
 		}
 		
-		@Test(priority=3)
-		public void logoutDesignScreen() throws InterruptedException{
+		@Test(priority=6)
+		public void logoutBranchScreen() throws InterruptedException{
 			branchpage.closeCreateScreen();
 			Thread.sleep(2000);
 		//	homepage.clickOnOrganisation();
@@ -65,12 +67,14 @@ public class BranchPageTest extends TestBase {
 		@AfterClass
 		public void logout() throws InterruptedException
 		{
-			homepage.clickUsername();
+			HomePage homePage=new HomePage();
+			
+			homePage.clickUsername();
 			Thread.sleep(3000);
-			homepage.clickLogoutButton(0);
+			homePage.clickLogoutButton(2);
 			Thread.sleep(10000);	
 		}
-		
+
 		
 	 
 }

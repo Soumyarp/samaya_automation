@@ -3,7 +3,6 @@ package com.samaya.qa.testcases.organisation;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import com.samaya.qa.base.TestBase;
 import com.samaya.qa.pages.organisation.DesignationPage;
 import com.samaya.qa.pages.organisation.EmpTypePage;

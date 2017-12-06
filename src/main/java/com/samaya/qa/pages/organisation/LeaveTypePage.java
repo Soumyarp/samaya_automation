@@ -58,7 +58,7 @@ public class LeaveTypePage extends TestBase {
 	public void createNewLeaveType(String name, String abbrevation) throws InterruptedException{
 		clickonDropdown.click();
 		Thread.sleep(2000);
-		clickonSelectAffiliate(1);
+		clickonSelectAffiliate(0);
 		leaveTypeName.sendKeys(name);
 		leaveTypeabbrevation.sendKeys(abbrevation);
 		Thread.sleep(2000);

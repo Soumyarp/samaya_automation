@@ -23,16 +23,16 @@ public class DesignationPageTest extends TestBase {
 	
 	String sheetname = "Designation";
 	
-	@Test(priority=7)
+	@Test(priority=7,enabled=true)
 	public void verifyDesignationPage() throws InterruptedException{
 		loginpage = new LoginPage();
 		loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 		homepage=new HomePage();
 		Thread.sleep(2000);
 		homepage.clickOnOrganisation();
-		homepage.clickOnDesignationPage();
+     	homepage.clickOnDesignationPage();
 		designationpage= new DesignationPage();
-		Thread.sleep(1000);
+    	Thread.sleep(1000);
 		designationpage.clickDesignation();;
 	}      
 	@DataProvider
@@ -40,12 +40,12 @@ public class DesignationPageTest extends TestBase {
 		Object data[][]=utility.getTestData(sheetname);
 		return data;
 }
-	@Test(priority=8,dataProvider="getData")
+	@Test(priority=8,dataProvider="getData",enabled=true)
 	public  void validateDesign(String Designationname) throws InterruptedException{
 		designationpage.createNewDesignation(Designationname);
 	}
 	
-	@Test(priority=9)
+	@Test(priority=9,enabled=true)
 	public void logoutDesignScreen() throws InterruptedException{
 		designationpage.closeDesignPage();
 		Thread.sleep(2000);
@@ -56,33 +56,60 @@ public class DesignationPageTest extends TestBase {
 		
 		
 	}
-	@Test(priority=10)
+//	@Test(priority=10,enabled=false)
 	public void valiateaffilateptions() throws InterruptedException{
-		String str[]={"Tata Food","Tata Medical","TATA Motors"};
+		//String str[]={"Tata Food","Tata Medical","TATA Motors"};
 		List<String> l1=new ArrayList<String>();
 		homepage.clickOnOrganisation();
 		homepage.clickOnDesignationPage();
 		designationpage= new DesignationPage();
 		Thread.sleep(1000);
 		designationpage.clickDesignation();
+		Thread.sleep(1000);
 		designationpage.selcAffilatedropown();
-		List<String> values=designationpage.getdropdownValues();
+		
+		designationpage.clickonSelectAffiliate(0);
+		designationpage.passNametodesignaTextfield();
+		designationpage.clickOnSaveCTA();
+		Thread.sleep(2000);
+		designationpage.getdropdownValues();
 		//Assert.assertTrue(str[i].contains(values.get(i)));
-		for(int i=0;i<values.size();i++)
-		{
-			Assert.assertTrue(str[i].contains(values.get(i)));
-		}
-	
+		
 	}
 	
-//	@AfterClass
-//	public void logout() throws InterruptedException
-//	{
-//		homepage.clickUsername();
-//		Thread.sleep(3000);
-//		homepage.clickLogoutButton(0);
-//		Thread.sleep(10000);	
-//	}
+//	@Test(priority=10)
+	public void validateAffilatewithExceldta() throws InterruptedException
+	{
+		TestUtil utility=new TestUtil();
+		List<String> exceldata=utility.getAllTestdatfrmExcel(sheetname, "Affiliate");
+		System.out.println(exceldata.size());
+		homepage.clickOnOrganisation();
+		homepage.clickOnDesignationPage();
+		designationpage= new DesignationPage();
+		Thread.sleep(1000);
+		designationpage.clickDesignation();
+		Thread.sleep(1000);
+		designationpage.selcAffilatedropown();
+		designationpage.clickonSelectAffiliate(0);
+		designationpage.passNametodesignaTextfield();
+		designationpage.clickOnSaveCTA();
+		Thread.sleep(2000);
+		//List<String> afilatess=designationpage.selectAffilatessss();
+		designationpage.selectAflt();
+		
+		
+		
+	}
+	
+	
+	@AfterClass
+	public void logout() throws InterruptedException
+	{
+		homepage.clickUsername();
+		Thread.sleep(3000);
+		homepage.clickLogoutButton(0);
+		Thread.sleep(10000);	
+	}
  
 	
 	

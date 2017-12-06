@@ -49,8 +49,13 @@ public class DepartmentPage extends TestBase{
 			public void closeCreateDeptScreen(){
 				closeCreatDeptScreen.click();
 			}
+			public void clickAffilateDropdown()
+			{
+				clickonDropdown.click();
+			}
 			
 			public void createNewDept(String name) throws InterruptedException{
+				System.out.println("Cooming to here");
 				clickonDropdown.click();
 				Thread.sleep(2000);
 				clickonSelectAffiliate(1);
@@ -58,6 +63,7 @@ public class DepartmentPage extends TestBase{
 				Thread.sleep(2000);
 				saveButon.click();
 				Thread.sleep(7000);
+				//closeCreateDeptScreen();
 				
 			}
 

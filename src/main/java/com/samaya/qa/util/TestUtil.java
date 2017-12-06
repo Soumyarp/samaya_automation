@@ -9,9 +9,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Iterator;
+import java.util.List;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.EncryptedDocumentException;
@@ -32,6 +34,7 @@ import com.samaya.qa.pages.organisation.AffiliatePage;
 import com.samaya.qa.pages.organisation.EmployeesPage;
 import com.samaya.qa.pages.organisation.HomePage;
 import com.samaya.qa.pages.organisation.LoginPage;
+import com.samaya.qa.testcases.organisation.DesignationPageTest;
 
 public class TestUtil extends TestBase  {
 	public static int PAGE_LOAD_TIMEOUT=10;
@@ -45,7 +48,7 @@ public class TestUtil extends TestBase  {
 	AffiliatePage affiliatepage;
 	public static Calendar calender;
 	public static SimpleDateFormat formater;
-	
+	public static String filename = System.getProperty("user.dir")+"\\src\\main\\java\\com\\samaya\\qa\\testdata\\TestData.xlsx";
 	
   public void navigateToPage(){
 	  if (loginpage.verifyDashboardPage()!= homepage.verifyEmployeePageUrl()) {
@@ -89,6 +92,7 @@ public class TestUtil extends TestBase  {
   
 
  public static Object[][] getTestData(String sheetName){
+	// System.out.println("hiiiiiiiiiiiiii");
 	 FileInputStream file = null;
 	 try {
 		file = new FileInputStream(TESTDATA_SHEET_PATH);
@@ -208,7 +212,29 @@ public void scrollWindowPage() throws AWTException, InterruptedException{
 	
 }
 
-
-
+public List<String> getAllTestdatfrmExcel(String sheetName,String colName)
+{
+	  System.out.println("excel");
+	  List<String> l1=new ArrayList<String>();
+	   Xls_Reader reader=new Xls_Reader(filename);
+	   int rowcount=reader.getRowCount(sheetName);
+	   for(int rownum=2;rownum<=rowcount;rownum++)
+	   {
+		String colData=reader.getCellData(sheetName, colName, rownum)  ; 
+		System.out.println(colData);
+		l1.add(colData);
+		
+	   }
+	   return l1;
+	 
+	   
+	   
+}	
+	
+	
 }
+
+
+
+
 

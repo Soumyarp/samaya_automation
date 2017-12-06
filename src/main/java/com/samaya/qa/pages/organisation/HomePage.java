@@ -55,10 +55,10 @@ WebElement HolidaysLink;
 WebElement Leave_TypesLink;
 
  @FindBys ({
-	 @FindBy(xpath="//div/ul/li[3]/a/div")})
+	 @FindBy(xpath="//app-root/header/div[2]/div[2]/div/ul/li/a")})
 List <WebElement> logoutButton;
  
- WebElement element = driver.findElement(By.xpath("html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]"));
+ //WebElement element = driver.findElement(By.xpath("html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]"));
  
 //Intializing the page objects	
 	public HomePage(){

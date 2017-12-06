@@ -35,10 +35,10 @@ public class CompoffPageTest extends TestBase{
 		Thread.sleep(2000);
 		transactionpage.clickOnCompoffLink();
 		cp.clickOnNewCompoffbtn();
-		cp.clickonOnbehalfchkBox();
-		String empID=cp.displayEmployeeList(1);
-		System.out.println(empID);
-		cp.selectEmployee(2);
+	//	cp.clickonOnbehalfchkBox();
+		//String empID=cp.displayEmployeeList(1);
+		//System.out.println(empID);
+		//cp.selectEmployee(2);
 		cp.clickonOnearnCompoffRadioBtn();
 		Thread.sleep(2000);
 		cp.selectStartDate();
