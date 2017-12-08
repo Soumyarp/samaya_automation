@@ -44,6 +44,7 @@ public class TestUtil extends TestBase  {
 	static Sheet sheet;
 	LoginPage loginpage;
 	HomePage homepage;
+	Robot robot;
 	EmployeesPage employeespage;
 	AffiliatePage affiliatepage;
 	public static Calendar calender;
@@ -204,12 +205,20 @@ public static void takeScreenshotAtEndOfTest() throws IOException {
 
 public void scrollWindowPage() throws AWTException, InterruptedException{
 	
-	Robot robot = new Robot();
+	robot = new Robot();
 	Thread.sleep(2000);
     robot.keyPress(KeyEvent.VK_PAGE_DOWN);
     robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
     
 	
+}
+
+public void backSpace() throws AWTException{
+	robot = new Robot();
+	robot.keyPress(KeyEvent.VK_SHIFT);
+	robot.keyPress(KeyEvent.VK_BACK_SPACE);
+	robot.keyRelease(KeyEvent.VK_BACK_SPACE);
+	robot.keyRelease(KeyEvent.VK_SHIFT);
 }
 
 public List<String> getAllTestdatfrmExcel(String sheetName,String colName)

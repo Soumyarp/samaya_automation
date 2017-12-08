@@ -1,73 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="70792" started-at="2017-12-05T17:59:57Z" finished-at="2017-12-05T18:01:07Z">
+  <suite name="Default suite" duration-ms="42505" started-at="2017-12-08T08:58:14Z" finished-at="2017-12-08T08:58:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="70792" started-at="2017-12-05T17:59:57Z" finished-at="2017-12-05T18:01:07Z">
-      <class name="com.samaya.qa.testcases.organisation.DepartmentpageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.samaya.qa.testcases.organisation.DepartmentpageTest@4edc67]" name="setUp" is-config="true" duration-ms="24087" started-at="2017-12-05T23:29:33Z" finished-at="2017-12-05T23:29:57Z">
+    <test name="Default test" duration-ms="42505" started-at="2017-12-08T08:58:14Z" finished-at="2017-12-08T08:58:57Z">
+      <class name="com.samaya.qa.testcases.policymanagement.TestCompOffPolicy">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.samaya.qa.testcases.policymanagement.TestCompOffPolicy@1057a39]" name="setUp" is-config="true" duration-ms="24453" started-at="2017-12-08T14:27:50Z" finished-at="2017-12-08T14:28:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyDepartmentPage()[pri:1, instance:com.samaya.qa.testcases.organisation.DepartmentpageTest@4edc67]" name="verifyDepartmentPage" duration-ms="5433" started-at="2017-12-05T23:29:57Z" finished-at="2017-12-05T23:30:02Z">
+        <test-method status="PASS" signature="verifyPresenceOnNonWorkingDayswithoutUsingPrior()[pri:0, instance:com.samaya.qa.testcases.policymanagement.TestCompOffPolicy@1057a39]" name="verifyPresenceOnNonWorkingDayswithoutUsingPrior" duration-ms="42489" started-at="2017-12-08T14:28:14Z" finished-at="2017-12-08T14:28:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDepartmentPage -->
-        <test-method status="PASS" signature="validateEmpType(java.lang.String)[pri:2, instance:com.samaya.qa.testcases.organisation.DepartmentpageTest@4edc67]" name="validateEmpType" duration-ms="12083" started-at="2017-12-05T23:30:03Z" data-provider="getData" finished-at="2017-12-05T23:30:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testExcel]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateEmpType -->
-        <test-method status="PASS" signature="validateEmpType(java.lang.String)[pri:2, instance:com.samaya.qa.testcases.organisation.DepartmentpageTest@4edc67]" name="validateEmpType" duration-ms="12128" started-at="2017-12-05T23:30:15Z" data-provider="getData" finished-at="2017-12-05T23:30:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testExcel]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateEmpType -->
-        <test-method status="PASS" signature="validateEmpType(java.lang.String)[pri:2, instance:com.samaya.qa.testcases.organisation.DepartmentpageTest@4edc67]" name="validateEmpType" duration-ms="12169" started-at="2017-12-05T23:30:27Z" data-provider="getData" finished-at="2017-12-05T23:30:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testExcel]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateEmpType -->
-        <test-method status="PASS" signature="validateEmpType(java.lang.String)[pri:2, instance:com.samaya.qa.testcases.organisation.DepartmentpageTest@4edc67]" name="validateEmpType" duration-ms="11893" started-at="2017-12-05T23:30:39Z" data-provider="getData" finished-at="2017-12-05T23:30:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[testExcel]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateEmpType -->
-        <test-method status="PASS" signature="logoutDepartmentScreen()[pri:3, instance:com.samaya.qa.testcases.organisation.DepartmentpageTest@4edc67]" name="logoutDepartmentScreen" duration-ms="2369" started-at="2017-12-05T23:30:51Z" finished-at="2017-12-05T23:30:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutDepartmentScreen -->
-        <test-method status="PASS" signature="logout()[pri:0, instance:com.samaya.qa.testcases.organisation.DepartmentpageTest@4edc67]" name="logout" is-config="true" duration-ms="13894" started-at="2017-12-05T23:30:54Z" finished-at="2017-12-05T23:31:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-      </class> <!-- com.samaya.qa.testcases.organisation.DepartmentpageTest -->
+        </test-method> <!-- verifyPresenceOnNonWorkingDayswithoutUsingPrior -->
+      </class> <!-- com.samaya.qa.testcases.policymanagement.TestCompOffPolicy -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
