@@ -33,11 +33,11 @@ public class TestCompOffPolicy extends TestBase{
 		compoffpolicy.clickOnNewCompoffPolicybtn();
 		Thread.sleep(2000);
 		compoffpolicy.clickOnDropDown(0);
-		//Thread.sleep(5000);
+		Thread.sleep(5000);
 		compoffpolicy.clickSelectAffiliate(4);
 		compoffpolicy.clickSelectAffiliate(4);
-		//compoffpolicy.clickSelectAffiliate();
-		//compoffpolicy.clickSelectAffiliate();
+		compoffpolicy.clickSelectAffiliate();
+		compoffpolicy.clickSelectAffiliate();
 		Thread.sleep(4000);
 		compoffpolicy.EnterPolicyName(prop.getProperty("policyname"));
 		Thread.sleep(2000);
@@ -57,7 +57,7 @@ public class TestCompOffPolicy extends TestBase{
 		compoffpolicy.clickOnSaveAsDraftBtn();
 	}
 	/*presence on non working days without using prior*/
-	@Test
+//	@Test
 	public void verifyPresenceOnNonWorkingDayswithoutUsingPrior() throws InterruptedException, AWTException{
 		utility = new TestUtil();
 		loginpage = new LoginPage();
@@ -82,7 +82,6 @@ public class TestCompOffPolicy extends TestBase{
 		compoffpolicy.clickOnCompoffCreditRadioButton(1);
 		Thread.sleep(5000);
 		compoffpolicy.clickOnCompoffCreditType(0);
-		
 		compoffpolicy.clickOnHolidayCheckBox();
 		Thread.sleep(3000);
 		compoffpolicy.clickOnDateTimePicker(1);

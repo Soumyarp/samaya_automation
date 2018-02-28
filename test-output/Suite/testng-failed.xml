@@ -11,19 +11,9 @@
           <include name="logout"/>
           <include name="validateEmpType" invocation-numbers="0 1"/>
           <include name="logoutDesignScreen"/>
-          <include name="verifyDesignationPage"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.samaya.qa.testcases.organisation.EmpTypePageTest -->
-      <class name="com.samaya.qa.testcases.organisation.DepartmentpageTest">
-        <methods>
-          <include name="validateDepartment"/>
-          <include name="verifyDepartmentPage"/>
-          <include name="setUp"/>
-          <include name="logout"/>
-          <include name="logoutDepartmentScreen"/>
-        </methods>
-      </class> <!-- com.samaya.qa.testcases.organisation.DepartmentpageTest -->
       <class name="com.samaya.qa.testcases.organisation.ManageTagPageTest">
         <methods>
           <include name="logoutManageScreen"/>

@@ -15,11 +15,11 @@ public class LoginPage extends TestBase{
 	@FindBy(xpath="//input[@type='email']")
 	public
 	WebElement email1;
-	@FindBy(xpath = "//st-input[2]/div/input")
+	@FindBy(xpath = "//st-input/div/input[@type='password']")
 	public
 	WebElement password;
 	
-	@FindBy(xpath = "//input[@type='password']")
+	@FindBy(xpath = "//st-input/div/input[@type='password']")
 	public
 	WebElement password1;
 	

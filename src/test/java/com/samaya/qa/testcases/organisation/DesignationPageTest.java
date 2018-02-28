@@ -23,7 +23,7 @@ public class DesignationPageTest extends TestBase {
 	
 	String sheetname = "Designation";
 	
-	@Test(priority=7,enabled=true)
+	@Test(priority=10,enabled=true)
 	public void verifyDesignationPage() throws InterruptedException{
 		loginpage = new LoginPage();
 		loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
@@ -40,12 +40,12 @@ public class DesignationPageTest extends TestBase {
 		Object data[][]=utility.getTestData(sheetname);
 		return data;
 }
-	@Test(priority=8,dataProvider="getData",enabled=true)
+	@Test(priority=11,dataProvider="getData",enabled=true)
 	public  void validateDesign(String Designationname) throws InterruptedException{
 		designationpage.createNewDesignation(Designationname);
 	}
 	
-	@Test(priority=9,enabled=true)
+	@Test(priority=12,enabled=true)
 	public void logoutDesignScreen() throws InterruptedException{
 		designationpage.closeDesignPage();
 		Thread.sleep(2000);

@@ -6,15 +6,15 @@
  </listeners>
 
 
-  <test name="Test1">
+  <test name="Test1" preserve-order="true">
     <classes>
      <class name="com.samaya.qa.testcases.organisation.AffiliatePageTest"/>
+      <class name="com.samaya.qa.testcases.organisation.BranchPageTest"/>
       <class name="com.samaya.qa.testcases.organisation.DepartmentpageTest"/>
       <class name="com.samaya.qa.testcases.organisation.DesignationPageTest"/>
-      <class name="com.samaya.qa.testcases.organisation.ManageTagPageTest"/>
       <class name="com.samaya.qa.testcases.organisation.LeaveTypePageTest"/>
-      <class name="com.samaya.qa.testcases.organisation.EmpTypePageTest"/>
-     
+       <class name="com.samaya.qa.testcases.organisation.EmpTypePageTest"/>
+      <class name="com.samaya.qa.testcases.organisation.ManageTagPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

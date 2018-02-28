@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/15/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>20/12/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Dec 05 16:01:52 IST 2017</td>
+<td>Started on:</td><td>Tue Dec 19 18:06:17 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>132 seconds (132255 ms)</td>
+<tr><td>Total time:</td><td>251 seconds (251439 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,12 +75,47 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.samaya.qa.testcases.organisation.DepartmentpageTest.logout()'><b>logout</b><br>Test class: com.samaya.qa.testcases.organisation.DepartmentpageTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.samaya.qa.testcases.organisation.DepartmentpageTest.logout(DepartmentpageTest.java:64)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7331529", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace7331529'><pre>java.lang.NullPointerException
-	at com.samaya.qa.testcases.organisation.DepartmentpageTest.logout(DepartmentpageTest.java:64)
+<td title='com.samaya.qa.testcases.organisation.EmpTypePageTest.logout()'><b>logout</b><br>Test class: com.samaya.qa.testcases.organisation.EmpTypePageTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (1311.433349609375, 34.71665954589844). Other element would receive the click: &lt;div class=&quot;col-xs-12 height-50px vertical-center space-between border-bottom&quot; _ngcontent-c32=&quot;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 296 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 64728beb-c529-4021-81ba-6b244c163a45
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.samaya.qa.pages.organisation.HomePage.clickUsername(HomePage.java:174)
+	at com.samaya.qa.testcases.organisation.EmpTypePageTest.logout(EmpTypePageTest.java:57)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16763863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace16763863'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (1311.433349609375, 34.71665954589844). Other element would receive the click: &lt;div class=&quot;col-xs-12 height-50px vertical-center space-between border-bottom&quot; _ngcontent-c32=&quot;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 296 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 64728beb-c529-4021-81ba-6b244c163a45
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.samaya.qa.pages.organisation.HomePage.clickUsername(HomePage.java:174)
+	at com.samaya.qa.testcases.organisation.EmpTypePageTest.logout(EmpTypePageTest.java:57)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -108,13 +143,48 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.samaya.qa.testcases.organisation.DepartmentpageTest@1832929</td></tr>
+<td>com.samaya.qa.testcases.organisation.EmpTypePageTest@132ec19</td></tr>
 <tr>
 <td title='com.samaya.qa.testcases.organisation.ManageTagPageTest.logout()'><b>logout</b><br>Test class: com.samaya.qa.testcases.organisation.ManageTagPageTest</td>
-<td><div><pre>java.lang.NullPointerException
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (1311.433349609375, 34.71665954589844). Other element would receive the click: &lt;div class=&quot;col-xs-12 height-50px vertical-center space-between border-bottom&quot; _ngcontent-c32=&quot;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 180 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 64728beb-c529-4021-81ba-6b244c163a45
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.samaya.qa.pages.organisation.HomePage.clickUsername(HomePage.java:174)
 	at com.samaya.qa.testcases.organisation.ManageTagPageTest.logout(ManageTagPageTest.java:58)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7286243", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace7286243'><pre>java.lang.NullPointerException
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10231215", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace10231215'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (1311.433349609375, 34.71665954589844). Other element would receive the click: &lt;div class=&quot;col-xs-12 height-50px vertical-center space-between border-bottom&quot; _ngcontent-c32=&quot;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 180 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 64728beb-c529-4021-81ba-6b244c163a45
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.samaya.qa.pages.organisation.HomePage.clickUsername(HomePage.java:174)
 	at com.samaya.qa.testcases.organisation.ManageTagPageTest.logout(ManageTagPageTest.java:58)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -143,77 +213,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.samaya.qa.testcases.organisation.ManageTagPageTest@1fc5af1</td></tr>
-<tr>
-<td title='com.samaya.qa.testcases.organisation.LeaveTypePageTest.logout()'><b>logout</b><br>Test class: com.samaya.qa.testcases.organisation.LeaveTypePageTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.samaya.qa.testcases.organisation.LeaveTypePageTest.logout(LeaveTypePageTest.java:58)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17113911", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace17113911'><pre>java.lang.NullPointerException
-	at com.samaya.qa.testcases.organisation.LeaveTypePageTest.logout(LeaveTypePageTest.java:58)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:212)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.samaya.qa.testcases.organisation.LeaveTypePageTest@5792a0</td></tr>
-<tr>
-<td title='com.samaya.qa.testcases.organisation.EmpTypePageTest.logout()'><b>logout</b><br>Test class: com.samaya.qa.testcases.organisation.EmpTypePageTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.samaya.qa.testcases.organisation.EmpTypePageTest.logout(EmpTypePageTest.java:57)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7095424", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace7095424'><pre>java.lang.NullPointerException
-	at com.samaya.qa.testcases.organisation.EmpTypePageTest.logout(EmpTypePageTest.java:57)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:212)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.samaya.qa.testcases.organisation.EmpTypePageTest@653222</td></tr>
+<td>com.samaya.qa.testcases.organisation.ManageTagPageTest@c4039c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -223,46 +223,60 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.samaya.qa.testcases.organisation.DepartmentpageTest.logoutDepartmentScreen()'><b>logoutDepartmentScreen</b><br>Test class: com.samaya.qa.testcases.organisation.DepartmentpageTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.samaya.qa.testcases.organisation.DepartmentpageTest.logoutDepartmentScreen(DepartmentpageTest.java:52)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5004776", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace5004776'><pre>java.lang.NullPointerException
-	at com.samaya.qa.testcases.organisation.DepartmentpageTest.logoutDepartmentScreen(DepartmentpageTest.java:52)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.samaya.qa.testcases.organisation.DepartmentpageTest@1832929</td></tr>
-<tr>
 <td title='com.samaya.qa.testcases.organisation.EmpTypePageTest.logoutDesignScreen()'><b>logoutDesignScreen</b><br>Test class: com.samaya.qa.testcases.organisation.EmpTypePageTest</td>
-<td><div><pre>java.lang.NullPointerException
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;appContentContainer&apos;]/div/app-employment-category-search/app-employment-category-detail/div/div[1]/button&quot;}
+Command duration or timeout: 2.20 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 64728beb-c529-4021-81ba-6b244c163a45
+*** Element info: {Using=xpath, value=//*[@id=&apos;appContentContainer&apos;]/div/app-employment-category-search/app-employment-category-detail/div/div[1]/button}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.samaya.qa.pages.organisation.EmpTypePage.closeCreateEmpTypeScreen(EmpTypePage.java:49)
 	at com.samaya.qa.testcases.organisation.EmpTypePageTest.logoutDesignScreen(EmpTypePageTest.java:45)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace30000125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace30000125'><pre>java.lang.NullPointerException
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;appContentContainer&apos;]/div/app-employment-category-search/app-employment-category-detail/div/div[1]/button&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace6739551", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace6739551'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;appContentContainer&apos;]/div/app-employment-category-search/app-employment-category-detail/div/div[1]/button&quot;}
+Command duration or timeout: 2.20 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 64728beb-c529-4021-81ba-6b244c163a45
+*** Element info: {Using=xpath, value=//*[@id=&apos;appContentContainer&apos;]/div/app-employment-category-search/app-employment-category-detail/div/div[1]/button}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.samaya.qa.pages.organisation.EmpTypePage.closeCreateEmpTypeScreen(EmpTypePage.java:49)
 	at com.samaya.qa.testcases.organisation.EmpTypePageTest.logoutDesignScreen(EmpTypePageTest.java:45)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -289,50 +303,22 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;appContentContainer&apos;]/div/app-employment-category-search/app-employment-category-detail/div/div[1]/button&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
 </pre></div></td>
-<td>0</td>
-<td>com.samaya.qa.testcases.organisation.EmpTypePageTest@653222</td></tr>
-<tr>
-<td title='com.samaya.qa.testcases.organisation.ManageTagPageTest.logoutManageScreen()'><b>logoutManageScreen</b><br>Test class: com.samaya.qa.testcases.organisation.ManageTagPageTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.samaya.qa.testcases.organisation.ManageTagPageTest.logoutManageScreen(ManageTagPageTest.java:46)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22122295", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace22122295'><pre>java.lang.NullPointerException
-	at com.samaya.qa.testcases.organisation.ManageTagPageTest.logoutManageScreen(ManageTagPageTest.java:46)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.samaya.qa.testcases.organisation.ManageTagPageTest@1fc5af1</td></tr>
+<td>2</td>
+<td>com.samaya.qa.testcases.organisation.EmpTypePageTest@132ec19</td></tr>
 <tr>
 <td title='com.samaya.qa.testcases.organisation.LeaveTypePageTest.logoutManageScreen()'><b>logoutManageScreen</b><br>Test class: com.samaya.qa.testcases.organisation.LeaveTypePageTest</td>
 <td><div><pre>java.lang.NullPointerException
 	at com.samaya.qa.testcases.organisation.LeaveTypePageTest.logoutManageScreen(LeaveTypePageTest.java:46)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace894028", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace894028'><pre>java.lang.NullPointerException
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5498827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace5498827'><pre>java.lang.NullPointerException
 	at com.samaya.qa.testcases.organisation.LeaveTypePageTest.logoutManageScreen(LeaveTypePageTest.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -361,14 +347,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.samaya.qa.testcases.organisation.LeaveTypePageTest@5792a0</td></tr>
+<td>com.samaya.qa.testcases.organisation.LeaveTypePageTest@653222</td></tr>
 <tr>
-<td title='com.samaya.qa.testcases.organisation.EmpTypePageTest.validateEmpType()'><b>validateEmpType</b><br>Test class: com.samaya.qa.testcases.organisation.EmpTypePageTest<br>Parameters: Permanentusr</td>
+<td title='com.samaya.qa.testcases.organisation.ManageTagPageTest.logoutManageScreen()'><b>logoutManageScreen</b><br>Test class: com.samaya.qa.testcases.organisation.ManageTagPageTest</td>
 <td><div><pre>java.lang.NullPointerException
-	at com.samaya.qa.testcases.organisation.EmpTypePageTest.validateEmpType(EmpTypePageTest.java:40)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23509671", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace23509671'><pre>java.lang.NullPointerException
-	at com.samaya.qa.testcases.organisation.EmpTypePageTest.validateEmpType(EmpTypePageTest.java:40)
+	at com.samaya.qa.testcases.organisation.ManageTagPageTest.logoutManageScreen(ManageTagPageTest.java:46)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16480049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace16480049'><pre>java.lang.NullPointerException
+	at com.samaya.qa.testcases.organisation.ManageTagPageTest.logoutManageScreen(ManageTagPageTest.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -396,13 +382,62 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.samaya.qa.testcases.organisation.EmpTypePageTest@653222</td></tr>
+<td>com.samaya.qa.testcases.organisation.ManageTagPageTest@c4039c</td></tr>
 <tr>
-<td title='com.samaya.qa.testcases.organisation.EmpTypePageTest.validateEmpType()'><b>validateEmpType</b><br>Test class: com.samaya.qa.testcases.organisation.EmpTypePageTest<br>Parameters: Temporaryusr</td>
-<td><div><pre>java.lang.NullPointerException
+<td title='com.samaya.qa.testcases.organisation.EmpTypePageTest.validateEmpType()'><b>validateEmpType</b><br>Test class: com.samaya.qa.testcases.organisation.EmpTypePageTest<br>Parameters: Permanentusers</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Category Name&apos;]&quot;}
+Command duration or timeout: 2.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 64728beb-c529-4021-81ba-6b244c163a45
+*** Element info: {Using=xpath, value=//input[@placeholder=&apos;Category Name&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at com.samaya.qa.pages.organisation.EmpTypePage.createNewEmpType(EmpTypePage.java:56)
 	at com.samaya.qa.testcases.organisation.EmpTypePageTest.validateEmpType(EmpTypePageTest.java:40)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace5498827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace5498827'><pre>java.lang.NullPointerException
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Category Name&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace12823813", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace12823813'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Category Name&apos;]&quot;}
+Command duration or timeout: 2.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 64728beb-c529-4021-81ba-6b244c163a45
+*** Element info: {Using=xpath, value=//input[@placeholder=&apos;Category Name&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at com.samaya.qa.pages.organisation.EmpTypePage.createNewEmpType(EmpTypePage.java:56)
 	at com.samaya.qa.testcases.organisation.EmpTypePageTest.validateEmpType(EmpTypePageTest.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -429,15 +464,113 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Category Name&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
 </pre></div></td>
-<td>0</td>
-<td>com.samaya.qa.testcases.organisation.EmpTypePageTest@653222</td></tr>
+<td>5</td>
+<td>com.samaya.qa.testcases.organisation.EmpTypePageTest@132ec19</td></tr>
+<tr>
+<td title='com.samaya.qa.testcases.organisation.EmpTypePageTest.validateEmpType()'><b>validateEmpType</b><br>Test class: com.samaya.qa.testcases.organisation.EmpTypePageTest<br>Parameters: Temporaryusers</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Category Name&apos;]&quot;}
+Command duration or timeout: 2.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 64728beb-c529-4021-81ba-6b244c163a45
+*** Element info: {Using=xpath, value=//input[@placeholder=&apos;Category Name&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at com.samaya.qa.pages.organisation.EmpTypePage.createNewEmpType(EmpTypePage.java:56)
+	at com.samaya.qa.testcases.organisation.EmpTypePageTest.validateEmpType(EmpTypePageTest.java:40)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Category Name&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22424233", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace22424233'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Category Name&apos;]&quot;}
+Command duration or timeout: 2.14 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 64728beb-c529-4021-81ba-6b244c163a45
+*** Element info: {Using=xpath, value=//input[@placeholder=&apos;Category Name&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at com.samaya.qa.pages.organisation.EmpTypePage.createNewEmpType(EmpTypePage.java:56)
+	at com.samaya.qa.testcases.organisation.EmpTypePageTest.validateEmpType(EmpTypePageTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Category Name&apos;]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+</pre></div></td>
+<td>5</td>
+<td>com.samaya.qa.testcases.organisation.EmpTypePageTest@132ec19</td></tr>
 <tr>
 <td title='com.samaya.qa.testcases.organisation.LeaveTypePageTest.validateLeaveType()'><b>validateLeaveType</b><br>Test class: com.samaya.qa.testcases.organisation.LeaveTypePageTest<br>Parameters: CasualLeave, CL</td>
 <td><div><pre>java.lang.NullPointerException
 	at com.samaya.qa.testcases.organisation.LeaveTypePageTest.validateLeaveType(LeaveTypePageTest.java:41)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace15389529", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace15389529'><pre>java.lang.NullPointerException
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18097237", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18097237'><pre>java.lang.NullPointerException
 	at com.samaya.qa.testcases.organisation.LeaveTypePageTest.validateLeaveType(LeaveTypePageTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -466,13 +599,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.samaya.qa.testcases.organisation.LeaveTypePageTest@5792a0</td></tr>
+<td>com.samaya.qa.testcases.organisation.LeaveTypePageTest@653222</td></tr>
 <tr>
 <td title='com.samaya.qa.testcases.organisation.LeaveTypePageTest.validateLeaveType()'><b>validateLeaveType</b><br>Test class: com.samaya.qa.testcases.organisation.LeaveTypePageTest<br>Parameters: SickLeave, SL</td>
 <td><div><pre>java.lang.NullPointerException
 	at com.samaya.qa.testcases.organisation.LeaveTypePageTest.validateLeaveType(LeaveTypePageTest.java:41)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace894563", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace894563'><pre>java.lang.NullPointerException
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23509671", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace23509671'><pre>java.lang.NullPointerException
 	at com.samaya.qa.testcases.organisation.LeaveTypePageTest.validateLeaveType(LeaveTypePageTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -501,13 +634,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.samaya.qa.testcases.organisation.LeaveTypePageTest@5792a0</td></tr>
+<td>com.samaya.qa.testcases.organisation.LeaveTypePageTest@653222</td></tr>
 <tr>
 <td title='com.samaya.qa.testcases.organisation.ManageTagPageTest.validateManageTag()'><b>validateManageTag</b><br>Test class: com.samaya.qa.testcases.organisation.ManageTagPageTest<br>Parameters: TestExcel1, ExcelTest1</td>
 <td><div><pre>java.lang.NullPointerException
 	at com.samaya.qa.testcases.organisation.ManageTagPageTest.validateManageTag(ManageTagPageTest.java:41)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16839933", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace16839933'><pre>java.lang.NullPointerException
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace20516579", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace20516579'><pre>java.lang.NullPointerException
 	at com.samaya.qa.testcases.organisation.ManageTagPageTest.validateManageTag(ManageTagPageTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -536,13 +669,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.samaya.qa.testcases.organisation.ManageTagPageTest@1fc5af1</td></tr>
+<td>com.samaya.qa.testcases.organisation.ManageTagPageTest@c4039c</td></tr>
 <tr>
 <td title='com.samaya.qa.testcases.organisation.ManageTagPageTest.validateManageTag()'><b>validateManageTag</b><br>Test class: com.samaya.qa.testcases.organisation.ManageTagPageTest<br>Parameters: TestExcel2, ExcelTest2</td>
 <td><div><pre>java.lang.NullPointerException
 	at com.samaya.qa.testcases.organisation.ManageTagPageTest.validateManageTag(ManageTagPageTest.java:41)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace11218248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace11218248'><pre>java.lang.NullPointerException
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace31369289", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace31369289'><pre>java.lang.NullPointerException
 	at com.samaya.qa.testcases.organisation.ManageTagPageTest.validateManageTag(ManageTagPageTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -571,13 +704,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.samaya.qa.testcases.organisation.ManageTagPageTest@1fc5af1</td></tr>
+<td>com.samaya.qa.testcases.organisation.ManageTagPageTest@c4039c</td></tr>
 <tr>
 <td title='com.samaya.qa.testcases.organisation.ManageTagPageTest.validateManageTag()'><b>validateManageTag</b><br>Test class: com.samaya.qa.testcases.organisation.ManageTagPageTest<br>Parameters: TestExcel3, ExcelTest3</td>
 <td><div><pre>java.lang.NullPointerException
 	at com.samaya.qa.testcases.organisation.ManageTagPageTest.validateManageTag(ManageTagPageTest.java:41)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18161670", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace18161670'><pre>java.lang.NullPointerException
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace30533072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace30533072'><pre>java.lang.NullPointerException
 	at com.samaya.qa.testcases.organisation.ManageTagPageTest.validateManageTag(ManageTagPageTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -606,299 +739,41 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.samaya.qa.testcases.organisation.ManageTagPageTest@1fc5af1</td></tr>
-<tr>
-<td title='com.samaya.qa.testcases.organisation.DepartmentpageTest.verifyDepartmentPage()'><b>verifyDepartmentPage</b><br>Test class: com.samaya.qa.testcases.organisation.DepartmentpageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]&quot;}
-Command duration or timeout: 2.14 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ee4e47ff-f883-4e6f-a0f6-70bbb26c4550
-*** Element info: {Using=xpath, value=html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.samaya.qa.pages.organisation.HomePage.&lt;init&gt;(HomePage.java:61)
-	at com.samaya.qa.testcases.organisation.DepartmentpageTest.verifyDepartmentPage(DepartmentpageTest.java:30)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sec2/AppData/Local/Temp/anonymous4600854557689300148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sec2/AppData/Local/Temp/anonymous4600854557689300148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29359127", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace29359127'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]&quot;}
-Command duration or timeout: 2.14 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ee4e47ff-f883-4e6f-a0f6-70bbb26c4550
-*** Element info: {Using=xpath, value=html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.samaya.qa.pages.organisation.HomePage.&lt;init&gt;(HomePage.java:61)
-	at com.samaya.qa.testcases.organisation.DepartmentpageTest.verifyDepartmentPage(DepartmentpageTest.java:30)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sec2/AppData/Local/Temp/anonymous4600854557689300148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sec2/AppData/Local/Temp/anonymous4600854557689300148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-</pre></div></td>
-<td>4</td>
-<td>com.samaya.qa.testcases.organisation.DepartmentpageTest@1832929</td></tr>
-<tr>
-<td title='com.samaya.qa.testcases.organisation.EmpTypePageTest.verifyDesignationPage()'><b>verifyDesignationPage</b><br>Test class: com.samaya.qa.testcases.organisation.EmpTypePageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]&quot;}
-Command duration or timeout: 2.11 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ee4e47ff-f883-4e6f-a0f6-70bbb26c4550
-*** Element info: {Using=xpath, value=html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.samaya.qa.pages.organisation.HomePage.&lt;init&gt;(HomePage.java:61)
-	at com.samaya.qa.testcases.organisation.EmpTypePageTest.verifyDesignationPage(EmpTypePageTest.java:25)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sec2/AppData/Local/Temp/anonymous4600854557689300148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sec2/AppData/Local/Temp/anonymous4600854557689300148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24110891", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace24110891'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]&quot;}
-Command duration or timeout: 2.11 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ee4e47ff-f883-4e6f-a0f6-70bbb26c4550
-*** Element info: {Using=xpath, value=html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.samaya.qa.pages.organisation.HomePage.&lt;init&gt;(HomePage.java:61)
-	at com.samaya.qa.testcases.organisation.EmpTypePageTest.verifyDesignationPage(EmpTypePageTest.java:25)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sec2/AppData/Local/Temp/anonymous4600854557689300148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sec2/AppData/Local/Temp/anonymous4600854557689300148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-</pre></div></td>
-<td>2</td>
-<td>com.samaya.qa.testcases.organisation.EmpTypePageTest@653222</td></tr>
-<tr>
-<td title='com.samaya.qa.testcases.organisation.ManageTagPageTest.verifyManagePage()'><b>verifyManagePage</b><br>Test class: com.samaya.qa.testcases.organisation.ManageTagPageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]&quot;}
-Command duration or timeout: 2.08 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ee4e47ff-f883-4e6f-a0f6-70bbb26c4550
-*** Element info: {Using=xpath, value=html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.samaya.qa.pages.organisation.HomePage.&lt;init&gt;(HomePage.java:61)
-	at com.samaya.qa.testcases.organisation.ManageTagPageTest.verifyManagePage(ManageTagPageTest.java:26)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sec2/AppData/Local/Temp/anonymous4600854557689300148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sec2/AppData/Local/Temp/anonymous4600854557689300148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16840200", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace16840200'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]&quot;}
-Command duration or timeout: 2.08 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ee4e47ff-f883-4e6f-a0f6-70bbb26c4550
-*** Element info: {Using=xpath, value=html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.samaya.qa.pages.organisation.HomePage.&lt;init&gt;(HomePage.java:61)
-	at com.samaya.qa.testcases.organisation.ManageTagPageTest.verifyManagePage(ManageTagPageTest.java:26)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sec2/AppData/Local/Temp/anonymous4600854557689300148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sec2/AppData/Local/Temp/anonymous4600854557689300148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-</pre></div></td>
-<td>2</td>
-<td>com.samaya.qa.testcases.organisation.ManageTagPageTest@1fc5af1</td></tr>
+<td>com.samaya.qa.testcases.organisation.ManageTagPageTest@c4039c</td></tr>
 <tr>
 <td title='com.samaya.qa.testcases.organisation.LeaveTypePageTest.verifyManagePage()'><b>verifyManagePage</b><br>Test class: com.samaya.qa.testcases.organisation.LeaveTypePageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]&quot;}
-Command duration or timeout: 2.16 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 2.17 seconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ee4e47ff-f883-4e6f-a0f6-70bbb26c4550
-*** Element info: {Using=xpath, value=html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]}
+Session ID: 64728beb-c529-4021-81ba-6b244c163a45
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.samaya.qa.pages.organisation.HomePage.&lt;init&gt;(HomePage.java:61)
-	at com.samaya.qa.testcases.organisation.LeaveTypePageTest.verifyManagePage(LeaveTypePageTest.java:26)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.samaya.qa.pages.organisation.HomePage.clickOnLeaveTypePage(HomePage.java:126)
+	at com.samaya.qa.testcases.organisation.LeaveTypePageTest.verifyManagePage(LeaveTypePageTest.java:29)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sec2/AppData/Local/Temp/anonymous4600854557689300148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sec2/AppData/Local/Temp/anonymous4600854557689300148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16196430", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace16196430'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]&quot;}
-Command duration or timeout: 2.16 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace32548043", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace32548043'><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 2.17 seconds
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ee4e47ff-f883-4e6f-a0f6-70bbb26c4550
-*** Element info: {Using=xpath, value=html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]}
+Session ID: 64728beb-c529-4021-81ba-6b244c163a45
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -906,12 +781,15 @@ Session ID: ee4e47ff-f883-4e6f-a0f6-70bbb26c4550
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.samaya.qa.pages.organisation.HomePage.&lt;init&gt;(HomePage.java:61)
-	at com.samaya.qa.testcases.organisation.LeaveTypePageTest.verifyManagePage(LeaveTypePageTest.java:26)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.samaya.qa.pages.organisation.HomePage.clickOnLeaveTypePage(HomePage.java:126)
+	at com.samaya.qa.testcases.organisation.LeaveTypePageTest.verifyManagePage(LeaveTypePageTest.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -937,16 +815,87 @@ Session ID: ee4e47ff-f883-4e6f-a0f6-70bbb26c4550
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;html/body/app-root/div[1]/div[2]/div/app-dashboard/app-employee-dashboard/div[3]/div[1]/div/div/div[1]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/sec2/AppData/Local/Temp/anonymous4600854557689300148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sec2/AppData/Local/Temp/anonymous4600854557689300148webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/sec2/AppData/Local/Temp/anonymous5648313541024387329webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
+</pre></div></td>
+<td>4</td>
+<td>com.samaya.qa.testcases.organisation.LeaveTypePageTest@653222</td></tr>
+<tr>
+<td title='com.samaya.qa.testcases.organisation.ManageTagPageTest.verifyManagePage()'><b>verifyManagePage</b><br>Test class: com.samaya.qa.testcases.organisation.ManageTagPageTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (88, 144.71665954589844). Other element would receive the click: &lt;app-designation-detail style=&quot;position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.8); z-index: 99;&quot; class=&quot;ng-tns-c32-4 ng-trigger ng-trigger-slideInOutAnimation&quot; _nghost-c32=&quot;&quot;&gt;&lt;/app-designation-detail&gt;
+Command duration or timeout: 180 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 64728beb-c529-4021-81ba-6b244c163a45
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.samaya.qa.pages.organisation.HomePage.clickOnOrganisation(HomePage.java:79)
+	at com.samaya.qa.testcases.organisation.ManageTagPageTest.verifyManagePage(ManageTagPageTest.java:28)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace21104062", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace21104062'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (88, 144.71665954589844). Other element would receive the click: &lt;app-designation-detail style=&quot;position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.8); z-index: 99;&quot; class=&quot;ng-tns-c32-4 ng-trigger ng-trigger-slideInOutAnimation&quot; _nghost-c32=&quot;&quot;&gt;&lt;/app-designation-detail&gt;
+Command duration or timeout: 180 milliseconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;securax2&apos;, ip: &apos;192.168.117.2&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 64728beb-c529-4021-81ba-6b244c163a45
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.samaya.qa.pages.organisation.HomePage.clickOnOrganisation(HomePage.java:79)
+	at com.samaya.qa.testcases.organisation.ManageTagPageTest.verifyManagePage(ManageTagPageTest.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>2</td>
-<td>com.samaya.qa.testcases.organisation.LeaveTypePageTest@5792a0</td></tr>
+<td>com.samaya.qa.testcases.organisation.ManageTagPageTest@c4039c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -959,91 +908,102 @@ Driver info: driver.version: unknown
 <td title='com.samaya.qa.testcases.organisation.AffiliatePageTest.closeCreatePage()'><b>closeCreatePage</b><br>Test class: com.samaya.qa.testcases.organisation.AffiliatePageTest</td>
 <td></td>
 <td>2</td>
-<td>com.samaya.qa.testcases.organisation.AffiliatePageTest@1275dab</td></tr>
+<td>com.samaya.qa.testcases.organisation.AffiliatePageTest@1832929</td></tr>
 <tr>
-<td title='com.samaya.qa.testcases.organisation.DesignationPageTest.validateAffilatewithExceldta()'><b>validateAffilatewithExceldta</b><br>Test class: com.samaya.qa.testcases.organisation.DesignationPageTest</td>
+<td title='com.samaya.qa.testcases.organisation.BranchPageTest.logoutBranchScreen()'><b>logoutBranchScreen</b><br>Test class: com.samaya.qa.testcases.organisation.BranchPageTest</td>
 <td></td>
-<td>65</td>
-<td>com.samaya.qa.testcases.organisation.DesignationPageTest@1774679</td></tr>
+<td>2</td>
+<td>com.samaya.qa.testcases.organisation.BranchPageTest@1774679</td></tr>
+<tr>
+<td title='com.samaya.qa.testcases.organisation.DepartmentpageTest.logoutDepartmentScreen()'><b>logoutDepartmentScreen</b><br>Test class: com.samaya.qa.testcases.organisation.DepartmentpageTest</td>
+<td></td>
+<td>2</td>
+<td>com.samaya.qa.testcases.organisation.DepartmentpageTest@1fc5af1</td></tr>
+<tr>
+<td title='com.samaya.qa.testcases.organisation.DesignationPageTest.logoutDesignScreen()'><b>logoutDesignScreen</b><br>Test class: com.samaya.qa.testcases.organisation.DesignationPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.samaya.qa.testcases.organisation.DesignationPageTest@5792a0</td></tr>
 <tr>
 <td title='com.samaya.qa.testcases.organisation.AffiliatePageTest.validateCreateAffiliate()'><b>validateCreateAffiliate</b><br>Test class: com.samaya.qa.testcases.organisation.AffiliatePageTest<br>Parameters: testAffiliateexcel1, 1234564783901, Bangalore</td>
 <td></td>
 <td>8</td>
-<td>com.samaya.qa.testcases.organisation.AffiliatePageTest@1275dab</td></tr>
+<td>com.samaya.qa.testcases.organisation.AffiliatePageTest@1832929</td></tr>
 <tr>
 <td title='com.samaya.qa.testcases.organisation.AffiliatePageTest.validateCreateAffiliate()'><b>validateCreateAffiliate</b><br>Test class: com.samaya.qa.testcases.organisation.AffiliatePageTest<br>Parameters: testAffiliateexcel2, 12345657893901, Bangalore</td>
 <td></td>
-<td>8</td>
-<td>com.samaya.qa.testcases.organisation.AffiliatePageTest@1275dab</td></tr>
+<td>7</td>
+<td>com.samaya.qa.testcases.organisation.AffiliatePageTest@1832929</td></tr>
 <tr>
 <td title='com.samaya.qa.testcases.organisation.AffiliatePageTest.validateCreateAffiliate()'><b>validateCreateAffiliate</b><br>Test class: com.samaya.qa.testcases.organisation.AffiliatePageTest<br>Parameters: testAffiliateexcel3, 12345667893001, Bangalore</td>
 <td></td>
-<td>8</td>
-<td>com.samaya.qa.testcases.organisation.AffiliatePageTest@1275dab</td></tr>
+<td>7</td>
+<td>com.samaya.qa.testcases.organisation.AffiliatePageTest@1832929</td></tr>
+<tr>
+<td title='com.samaya.qa.testcases.organisation.BranchPageTest.validateCreateBranch()'><b>validateCreateBranch</b><br>Test class: com.samaya.qa.testcases.organisation.BranchPageTest<br>Parameters: testExcel1, Barcelona</td>
+<td></td>
+<td>18</td>
+<td>com.samaya.qa.testcases.organisation.BranchPageTest@1774679</td></tr>
+<tr>
+<td title='com.samaya.qa.testcases.organisation.BranchPageTest.validateCreateBranch()'><b>validateCreateBranch</b><br>Test class: com.samaya.qa.testcases.organisation.BranchPageTest<br>Parameters: testExcel2, Barcelona</td>
+<td></td>
+<td>19</td>
+<td>com.samaya.qa.testcases.organisation.BranchPageTest@1774679</td></tr>
+<tr>
+<td title='com.samaya.qa.testcases.organisation.BranchPageTest.validateCreateBranch()'><b>validateCreateBranch</b><br>Test class: com.samaya.qa.testcases.organisation.BranchPageTest<br>Parameters: testExcel3, Barcelona</td>
+<td></td>
+<td>18</td>
+<td>com.samaya.qa.testcases.organisation.BranchPageTest@1774679</td></tr>
+<tr>
+<td title='com.samaya.qa.testcases.organisation.DesignationPageTest.validateDesign()'><b>validateDesign</b><br>Test class: com.samaya.qa.testcases.organisation.DesignationPageTest<br>Parameters: Qa</td>
+<td></td>
+<td>6</td>
+<td>com.samaya.qa.testcases.organisation.DesignationPageTest@5792a0</td></tr>
+<tr>
+<td title='com.samaya.qa.testcases.organisation.DesignationPageTest.validateDesign()'><b>validateDesign</b><br>Test class: com.samaya.qa.testcases.organisation.DesignationPageTest<br>Parameters: Se</td>
+<td></td>
+<td>6</td>
+<td>com.samaya.qa.testcases.organisation.DesignationPageTest@5792a0</td></tr>
+<tr>
+<td title='com.samaya.qa.testcases.organisation.DesignationPageTest.validateDesign()'><b>validateDesign</b><br>Test class: com.samaya.qa.testcases.organisation.DesignationPageTest<br>Parameters: Sdet</td>
+<td></td>
+<td>6</td>
+<td>com.samaya.qa.testcases.organisation.DesignationPageTest@5792a0</td></tr>
+<tr>
+<td title='com.samaya.qa.testcases.organisation.DepartmentpageTest.validateEmpType()'><b>validateEmpType</b><br>Test class: com.samaya.qa.testcases.organisation.DepartmentpageTest<br>Parameters: Permanentusers</td>
+<td></td>
+<td>12</td>
+<td>com.samaya.qa.testcases.organisation.DepartmentpageTest@1fc5af1</td></tr>
+<tr>
+<td title='com.samaya.qa.testcases.organisation.DepartmentpageTest.validateEmpType()'><b>validateEmpType</b><br>Test class: com.samaya.qa.testcases.organisation.DepartmentpageTest<br>Parameters: Temporaryusers</td>
+<td></td>
+<td>12</td>
+<td>com.samaya.qa.testcases.organisation.DepartmentpageTest@1fc5af1</td></tr>
 <tr>
 <td title='com.samaya.qa.testcases.organisation.AffiliatePageTest.verifyAffilitePage()'><b>verifyAffilitePage</b><br>Test class: com.samaya.qa.testcases.organisation.AffiliatePageTest</td>
 <td></td>
+<td>2</td>
+<td>com.samaya.qa.testcases.organisation.AffiliatePageTest@1832929</td></tr>
+<tr>
+<td title='com.samaya.qa.testcases.organisation.BranchPageTest.verifyBranchPage()'><b>verifyBranchPage</b><br>Test class: com.samaya.qa.testcases.organisation.BranchPageTest</td>
+<td></td>
 <td>5</td>
-<td>com.samaya.qa.testcases.organisation.AffiliatePageTest@1275dab</td></tr>
+<td>com.samaya.qa.testcases.organisation.BranchPageTest@1774679</td></tr>
+<tr>
+<td title='com.samaya.qa.testcases.organisation.DepartmentpageTest.verifyDepartmentPage()'><b>verifyDepartmentPage</b><br>Test class: com.samaya.qa.testcases.organisation.DepartmentpageTest</td>
+<td></td>
+<td>5</td>
+<td>com.samaya.qa.testcases.organisation.DepartmentpageTest@1fc5af1</td></tr>
 <tr>
 <td title='com.samaya.qa.testcases.organisation.DesignationPageTest.verifyDesignationPage()'><b>verifyDesignationPage</b><br>Test class: com.samaya.qa.testcases.organisation.DesignationPageTest</td>
 <td></td>
-<td>4</td>
-<td>com.samaya.qa.testcases.organisation.DesignationPageTest@1774679</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>5</td>
+<td>com.samaya.qa.testcases.organisation.DesignationPageTest@5792a0</td></tr>
 <tr>
-<td title='com.samaya.qa.testcases.organisation.DepartmentpageTest.validateDepartment()'><b>validateDepartment</b><br>Test class: com.samaya.qa.testcases.organisation.DepartmentpageTest</td>
-<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException
-Caused by: java.lang.NullPointerException
-	at com.samaya.qa.util.TestUtil.getTestData(TestUtil.java:114)
-	at com.samaya.qa.testcases.organisation.DepartmentpageTest.getData(DepartmentpageTest.java:41)
-	... 22 more
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace13752161", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace13752161'><pre>java.lang.RuntimeException: java.lang.NullPointerException
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:115)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:509)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException
-	at com.samaya.qa.util.TestUtil.getTestData(TestUtil.java:114)
-	at com.samaya.qa.testcases.organisation.DepartmentpageTest.getData(DepartmentpageTest.java:41)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:55)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
-	... 22 more
-</pre></div></td>
-<td>0</td>
-<td>com.samaya.qa.testcases.organisation.DepartmentpageTest@1832929</td></tr>
+<td title='com.samaya.qa.testcases.organisation.EmpTypePageTest.verifyDesignationPage()'><b>verifyDesignationPage</b><br>Test class: com.samaya.qa.testcases.organisation.EmpTypePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.samaya.qa.testcases.organisation.EmpTypePageTest@132ec19</td></tr>
 </table><p>
 </body>
 </html>

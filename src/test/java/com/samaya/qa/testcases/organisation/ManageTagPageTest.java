@@ -19,7 +19,7 @@ public class ManageTagPageTest extends TestBase {
 	
 	String sheetname = "ManageTags";
 	
-	@Test(priority=10)
+	@Test(priority=19)
 	public void verifyManagePage() throws InterruptedException{
 		loginpage = new LoginPage();
 		loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
@@ -36,12 +36,12 @@ public class ManageTagPageTest extends TestBase {
 		Object data[][]=utility.getTestData(sheetname);
 		return data;
 }
-	@Test(priority=11,dataProvider="getData")
+	@Test(priority=20,dataProvider="getData")
 	public  void validateManageTag(String TagName,String TagValue ) throws InterruptedException{
 		managepage.createNewTag(TagName, TagValue);
 	}
 	
-	@Test(priority=12)
+	@Test(priority=21)
 	public void logoutManageScreen() throws InterruptedException{
 		managepage.closeCreateTagScreen();
 		Thread.sleep(2000);

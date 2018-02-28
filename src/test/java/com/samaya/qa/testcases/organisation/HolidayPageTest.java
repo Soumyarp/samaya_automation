@@ -18,7 +18,7 @@ public class HolidayPageTest extends TestBase {
 	
 	String sheetname = "Holiday";
 	
-	@Test(priority=1,dataProvider="getData")
+	@Test(priority=22,dataProvider="getData")
 	public void verifyHolidayPage(String HolidayName) throws InterruptedException{
 		loginpage = new LoginPage();
 		loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
@@ -54,7 +54,7 @@ public class HolidayPageTest extends TestBase {
 		holidaypage.enterHolidayName(HolidayName);
 	}
 	
-	@Test(priority=2)
+	@Test(priority=23)
 	public void logoutHolidayScreen() throws InterruptedException{
 		holidaypage.closeCreateHolidayScreen();
 		Thread.sleep(2000);

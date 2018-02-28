@@ -16,7 +16,7 @@ import com.samaya.qa.pages.organisation.LoginPage;
 import com.samaya.qa.util.TestUtil;
 
 public class AffiliatePageTest extends TestBase{
-	HomePage homepage;
+	 HomePage homepage;
 	 LoginPage loginpage;
 	 AffiliatePage affiliatepage;
 	 

@@ -36,16 +36,16 @@ public class CompoffPageTest extends TestBase{
 		transactionpage.clickOnCompoffLink();
 		cp.clickOnNewCompoffbtn();
 	//	cp.clickonOnbehalfchkBox();
-		//String empID=cp.displayEmployeeList(1);
-		//System.out.println(empID);
-		//cp.selectEmployee(2);
+		String empID=cp.displayEmployeeList(1);
+		System.out.println(empID);
+		cp.selectEmployee(2);
 		cp.clickonOnearnCompoffRadioBtn();
 		Thread.sleep(2000);
 		cp.selectStartDate();
 		cp.selectEndDate();
 		cp.EnterReason();
 		cp.clickOnSaveCTA();
-	//	driver.navigate().back();
+		driver.navigate().back();
 		Thread.sleep(10000);
 		/*String compOffapgeempID=cp.clkOnFirstRowofcomPffDashbrd(0);
 		System.out.println(compOffapgeempID);
@@ -54,7 +54,7 @@ public class CompoffPageTest extends TestBase{
 	}
 	
 
-	@Test(priority=2)
+//	@Test(priority=2)
 	public void verifyCompOffPagewithOutBehalf() throws InterruptedException{
 	//	loginpage = new LoginPage();
 	//	loginpage.login(prop.getProperty("username"), prop.getProperty("password"));

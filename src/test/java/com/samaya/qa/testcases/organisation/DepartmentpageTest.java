@@ -23,7 +23,7 @@ public class DepartmentpageTest extends TestBase {
 	
 
 	
-	@Test(priority=1)
+	@Test(priority=7)
 	public void verifyDepartmentPage() throws InterruptedException{
 		loginpage = new LoginPage();
 		loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
@@ -56,13 +56,13 @@ public class DepartmentpageTest extends TestBase {
 		Object data[][]=utility.getTestData(sheetname);
 		return data;
 }
-	@Test(priority=2,dataProvider="getData")
+	@Test(priority=8,dataProvider="getData")
 	public  void validateEmpType(String DepartmentName) throws InterruptedException{
 		DepartmentPage departmentpage=new DepartmentPage();
 		departmentpage.createNewDept(DepartmentName);
 	}
 	
-	@Test(priority=3)
+	@Test(priority=9)
 	public void logoutDepartmentScreen() throws InterruptedException{
 		DepartmentPage departmentpage=new DepartmentPage();
 		departmentpage.closeCreateDeptScreen();

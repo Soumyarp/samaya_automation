@@ -1,5 +1,9 @@
 package com.samaya.qa.pages.transactions;
 
-public class LeavePage {
+import com.samaya.qa.base.TestBase;
 
+public class LeavePage extends TestBase{
+
+	
+	
 }

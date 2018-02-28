@@ -77,7 +77,7 @@ public class TestUtil extends TestBase  {
 		}
 		else{
 			System.out.println("unable to login in utiity");
-			loginPage.login("admin@tcs.com","admin");
+			loginPage.login("admin@tcs.com","p");
 			}
 	  }
 		catch (Exception e) {

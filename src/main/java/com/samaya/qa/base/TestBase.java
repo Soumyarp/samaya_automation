@@ -100,7 +100,7 @@ public class TestBase {
     	 @BeforeSuite
     	 public void setUp() throws InterruptedException
     	 {
-    		 System.out.println("hiii");
+    		// System.out.println("hiii");
     		 initialization();
     		 driver.get(prop.getProperty("url"));
      		
