@@ -38,7 +38,7 @@ import com.samaya.qa.testcases.organisation.DesignationPageTest;
 
 public class TestUtil extends TestBase  {
 	public static int PAGE_LOAD_TIMEOUT=10;
-	public static int IMPLICIT_WAIT=2;
+	public static int IMPLICIT_WAIT=5;
 	public static String TESTDATA_SHEET_PATH=System.getProperty("user.dir")+"/src/main/java/com/samaya/qa/testdata/Testdata.xlsx";
 	static Workbook book;
 	static Sheet sheet;

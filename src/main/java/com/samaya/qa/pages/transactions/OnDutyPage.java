@@ -22,14 +22,14 @@ public class OnDutyPage extends TestBase{
 	@FindBy(xpath="//input[@placeholder='Start Date']")
 	WebElement StartDate;
 	
-	@FindBy(xpath="//td[@data-day='02/12/2018']")
-	WebElement startDate;
+	/*@FindBy(xpath="//td[@data-day='02/12/2018']")
+	WebElement startDate;*/
 	
 	@FindBy(xpath="//input[@placeholder='End Date']")
 	WebElement EndDate;
 	
-	@FindBy(xpath="//td[@data-day='02/12/2018']")
-	WebElement endDate;
+	/*@FindBy(xpath="//td[@data-day='02/12/2018']")
+	WebElement endDate;*/
 	
 	@FindBy(xpath="//input[@id='OdReason']")
 	WebElement enterOdReason;
@@ -59,14 +59,29 @@ public class OnDutyPage extends TestBase{
 	    }
 	    public void selectStartDate() throws InterruptedException
 		{
+			String dateval= "2018-02-14";
 			
+		//	Thread.sleep(3000);
+		  //  StartDate.click();
+			//Thread.sleep(3000);
+			/*TransactionPage transactionpage = new TransactionPage();
+			transactionpage.selectDatebByJS(driver, StartDate, dateval);*/
+			JavascriptExecutor js = (JavascriptExecutor)driver;
+		//	String clickSearchJS="document.querySelector(\"[placeholder='Start Date']\")"+".click()";
+		//	js.executeScript(clickSearchJS);
+			Thread.sleep(2000);
+			js.executeScript("document.querySelector(\"input[placeholder='Start Date']\").value='"+dateval+"';");
 			StartDate.click();
+			//js.executeScript("document.queryselector('form-control ng-pristine ng-invalid ng-touched error-border error-text-color undefined').value='03/01/2018'");
+	//		js.executeScript("document.querySelector("input[placeholder='Start Date']").value=03/01/2018;");
 			//StartDate.click();
-			WebDriverWait wait = new WebDriverWait(driver, 40);
+			/*WebDriverWait wait = new WebDriverWait(driver, 40);
 
-			WebElement element = wait.until(ExpectedConditions.elementToBeClickable(startDate));
-			System.out.println(startDate.isDisplayed());
-			if(startDate.isDisplayed())
+			WebElement element = wait.until(ExpectedConditions.elementToBeClickable(StartDate));
+			System.out.println(StartDate.isDisplayed());*/
+			
+			
+			/*if(startDate.isDisplayed())
 			{
 				JavascriptExecutor executor = (JavascriptExecutor)driver;
 				executor.executeScript("arguments[0].click();", startDate);
@@ -74,14 +89,20 @@ public class OnDutyPage extends TestBase{
 				//SelectStartDateeeee.click();
 	    	//SelectStartDate.click();
 			Thread.sleep(2000);
-			}
+			}*/
 		}
 		public void selectEndDate() throws InterruptedException
 		{
-			EndDate.click();
-			JavascriptExecutor executor = (JavascriptExecutor)driver;
-			executor.executeScript("arguments[0].click();", endDate);
+			
 			Thread.sleep(2000);
+			String dateval= "2018-02-14";
+			JavascriptExecutor js = (JavascriptExecutor)driver;
+			js.executeScript("document.querySelector(\"input[placeholder='End Date']\").value='"+dateval+"';");
+			EndDate.click();
+			
+			/*JavascriptExecutor executor = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();", endDate);
+			Thread.sleep(2000);*/
 			}
 		public void EnterReason(String reason) throws InterruptedException
 		{

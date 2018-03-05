@@ -90,8 +90,9 @@ public class TestBase {
     	    driver.manage().window().maximize();
 //    	    System.out.println("browser maximized");
     	    driver.manage().deleteAllCookies();
-    	    //driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+    	    driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
     	    driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
+    	    driver.manage().timeouts().setScriptTimeout(5, TimeUnit.SECONDS);
 //    	    System.out.println("entering url");
     		
 			Thread.sleep(10000);

@@ -5,8 +5,8 @@
     <classes>
       <class name="com.samaya.qa.testcases.transactions.OnDutyPageTest">
         <methods>
-          <include name="applyingODByEmployee"/>
           <include name="setUp"/>
+          <include name="approveandDeclneODByHRorAdmins"/>
           <include name="login"/>
         </methods>
       </class> <!-- com.samaya.qa.testcases.transactions.OnDutyPageTest -->

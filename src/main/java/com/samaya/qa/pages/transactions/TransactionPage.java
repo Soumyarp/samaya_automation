@@ -2,6 +2,8 @@ package com.samaya.qa.pages.transactions;
 
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
@@ -28,6 +30,9 @@ public class TransactionPage  extends TestBase{
 	@FindBy(xpath= "//a[contains(text(),'Pending - Reportees')]")
 	WebElement pendingReportees;
 	
+	@FindBy(xpath="//a[contains(text(),'Pending - Others')]")
+	WebElement pendingOthers;
+	
 	@FindBys({
 		@FindBy(xpath="//app-reportees-on-duty-search/div/div/st-table/div[2]/div/div[1]")})
 	List<WebElement> pendingReportiesDetailsList;
@@ -48,7 +53,14 @@ public class TransactionPage  extends TestBase{
 	@FindBy(xpath="//h1[contains(text(),'OKAY')]")
 	WebElement okayButton;
 	
+	@FindBy(xpath="//button[contains(.,'Withdraw')]")
+	WebElement withdrawButton;
 	
+	@FindBy(xpath="//app-my-on-duty-search/div/div/st-table/div[2]/div/div[1]/div[2]")
+	WebElement actiononApplicationList;
+	
+	@FindBy(xpath="//app-indirect-reportees-on-duty-search/div/div/st-table/div[2]/div/div[1]/div[2]")
+	WebElement pendingOtherList;
 	//Intializing the page objects	
 		public TransactionPage(){
 			PageFactory.initElements(driver, this);
@@ -85,6 +97,10 @@ public class TransactionPage  extends TestBase{
 			pendingReportees.click();
 		}
 		
+		public void clickPendingOthersTab(){
+			pendingOthers.click();
+		}
+		
 		public void pendingReporteesList(int arg){
 			pendingReportiesDetailsList.get(arg).click();
 		}
@@ -109,6 +125,24 @@ public class TransactionPage  extends TestBase{
 			 okayButton.getText();
 			 okayButton.click();
 			return null;
+		}
+		
+		public void clickWithDrawButton(){
+			withdrawButton.click();
+		}
+		
+		public void applicationListonEmployee(){
+			actiononApplicationList.click();
+		}
+		
+		public void clickPendingOtherList(){
+			pendingOtherList.click();
+		}
+		
+		public void selectDatebByJS(WebDriver driver, WebElement element, String dateval){
+			JavascriptExecutor js = ((JavascriptExecutor)driver);
+		//	js.executeScript("arguments[0].setAttribute('value',"+dateval+");", element);
+			//js.executeScript("document.queryselector(element).dateval")
 		}
 	
 	
