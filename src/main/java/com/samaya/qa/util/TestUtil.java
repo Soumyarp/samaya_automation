@@ -28,13 +28,11 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import com.samaya.qa.base.TestBase;
 import com.samaya.qa.pages.organisation.AffiliatePage;
 import com.samaya.qa.pages.organisation.EmployeesPage;
 import com.samaya.qa.pages.organisation.HomePage;
 import com.samaya.qa.pages.organisation.LoginPage;
-import com.samaya.qa.testcases.organisation.DesignationPageTest;
 
 public class TestUtil extends TestBase  {
 	public static int PAGE_LOAD_TIMEOUT=10;
